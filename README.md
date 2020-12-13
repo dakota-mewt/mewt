@@ -62,25 +62,25 @@ Mewt is made up of 2 parts:
 
 ### 2. Get an Arduino microcontroller (~$10)
 * $8[![cheappromicro](/images/cheappromicro.png)](https://www.amazon.com/dp/B07J2Q3ZD5/)
-<details>
-<summary>Click to expand
+ <details>
+ <summary>Click to expand
 
-**Things to consider**
-  </summary>
+ **Things to consider**
+   </summary>
 
-Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
-**Things to consider**:
-* **Size**: Pro Micro is the smallest, followed closely by the Nano. Unos are pretty big
-* **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png).  _Headers are the pins that stick out from the Arduino_
+ Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
+ **Things to consider**:
+ * **Size**: Pro Micro is the smallest, followed closely by the Nano. Unos are pretty big
+ * **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png).  _Headers are the pins that stick out from the Arduino_
 
-**Examples**: 
+ **Examples**: 
 
-_ | Pro Micro | Nano | Nano 
------------- | ------------- | ------------- | -------------
-Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
-With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
-Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
-</details>
+ _ | Pro Micro | Nano | Nano 
+ ------------ | ------------- | ------------- | -------------
+ Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
+ With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
+ Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
+ </details>
 
 ### Naked Mewt
 You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit instead
