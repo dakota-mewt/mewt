@@ -80,7 +80,7 @@ _ | Pro Micro | Nano | Nano
 Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
 With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
 Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
-</details>
+  </details>
 
 ### Naked Mewt
 You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit instead
@@ -100,10 +100,9 @@ Naked LEDs require a resistor so they don't burn out
 
 **Examples**:
 * $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
-
   </details>
 
-  </details>
+</details>
 
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
 
