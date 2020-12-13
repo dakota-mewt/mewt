@@ -1,11 +1,12 @@
 # Mewt
-Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single click in Windows and Mac**.  
+Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single click in Windows, Mac and Linux**.  
 
 Mewt works at the operating system (OS) level, so this **will mute/unmute all conferencing software** (Zoom, Google Meet, Teams, WebEx, Blue Jeans, GoToMeeting, Skype, Slack, Facebook, Discord, etc.)
 
-Mewt will **continuously display the current Mute/Unmute state** so you can tell at a glance if your microphone is enabled without having to search for the onscreen icon.
+Mewt will **continuously display the current Mute/Unmute state** so you can tell at a glance if your microphone is enabled without having to search for the onscreen icon. _currently works in Windows and Mac, but not Linux_
 
-If your microphone is broadcasting, Mewt will also help you **avoid embarassing hot-mic incidents via RGB LED light indicator**.
+If your microphone is broadcasting, Mewt will also help you **avoid embarassing hot-mic incidents via RGB LED light indicator**. _currently works in Windows, but not Mac or Linux_
+
 Muted | Unmuted | Hot Mic
 ------------ | ------------- | -------------
 ![Mewted](/images/mewt.png) | ![Unmewted](/images/unmewt.png) | ![Hot Mic](/images/hotmic.gif)
@@ -56,6 +57,13 @@ Deluxe | $8[![deluxelatching](/images/deluxelatching.png)](https://www.amazon.co
 
 
 ### 2. Get an Arduino microcontroller (~$10)
+* $8[![cheappromicro](/images/cheappromicro.png)](https://www.amazon.com/dp/B07J2Q3ZD5/)
+<details>
+ <summary>Click to expand
+
+**Things to consider**
+   </summary>
+   
 Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
 **Things to consider**:
 * **Size**: Pro Micro is the smallest, followed closely by the Nano. Unos are pretty big
@@ -68,10 +76,14 @@ _ | Pro Micro | Nano | Nano
 Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
 With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
 Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
+</details>
 
 ### Naked Mewt
-You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit
+You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit instead
 
+<details>
+ <summary>Click to expand</summary> 
+ 
 **Examples**: 
 * $37[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01D8KOZF4/)
 
@@ -84,5 +96,7 @@ Naked LEDs require a resistor so they don't burn out
 
 **Examples**:
 * $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
+
+</details>
 
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
