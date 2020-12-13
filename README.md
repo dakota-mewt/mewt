@@ -1,5 +1,5 @@
 # Mewt
-Mewt allows you to create a **hardware button to Mute and Unmute all system microphones in Windows and Mac**.  
+Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single click in Windows and Mac**.  
 
 Mute/unmute occurs at the system level, so this **works for all conferencing software** (Zoom, Google Meet, Teams, WebEx, Blue Jeans, GoToMeeting, Skype, Slack, Facebook, Discord, etc.)
 
@@ -14,6 +14,7 @@ Mewt is made up of 2 parts:
 * an RGB LED to display mute state / hot-mike
 * an Arduino microcontroller to interface with the button and the LED and that communicates with the computer
 2. Code running on your computer to 
-* recognize button presses to toggle mute/unmute
-* read mute/unmute state and send information to the physical components to display status
+* recognize button presses to toggle microphone mute/unmute
+* read microphone mute/unmute state and send information to the physical components to display status
 * read microphone volume levels and send information to the physical components to display hot-mic
+
