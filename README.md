@@ -6,6 +6,9 @@ Mute/unmute occurs at the system level, so this **works for all conferencing sof
 Mewt will **continuously display the current Mute/Unmute state** so you can tell at a glance if your microphone is enabled without having to search for the onscreen icon.
 
 If your microphone is broadcasting, Mewt will also help you **avoid embarassing hot-mic incidents via RDB LED display**.
+Muted | Unmuted | Hot Mic
+------------ | ------------- | -------------
+![Mewted](/images/mewt.png) | ![Unmewted](/images/unmewt.png) | ![Hot Mic](/images/hotmic.gif)
 
 # How it works
 Mewt is made up of 2 parts: 
@@ -17,11 +20,3 @@ Mewt is made up of 2 parts:
 * recognize button presses to toggle microphone mute/unmute
 * read microphone mute/unmute state and send information to the physical components to display status
 * read microphone volume levels and send information to the physical components to display hot-mic
-
-# How it looks
-### Muted
-![Mewted](/images/mewt.png)
-### Unmuted
-![Unmewted](/images/unmewt.png)
-### Hot Mic
-![Hot Mic](/images/hotmic.gif)
