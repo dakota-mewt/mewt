@@ -30,7 +30,7 @@ Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connect
 * **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png)
 **Examples**: 
 
-Consideration | Pro Micro | Nano | Nano 
+_ | Pro Micro | Nano | Nano 
 ------------ | ------------- | ------------- | -------------
 Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
 With Headers  | N/A |  [$5.59](https://www.amazon.com/dp/B082HGQ24C/) | [$10.69](https://www.amazon.com/dp/B016D5KOO)
