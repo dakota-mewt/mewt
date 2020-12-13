@@ -14,8 +14,8 @@ Muted | Unmuted | Hot Mic
 Mewt is made up of 2 parts: 
 1. Physical components
    1. A physical button to control mute state 
-   1. An RGB LED to display mute state / hot-mike
-   1. An Arduino microcontroller to interface with the button and the LED and that communicates with the computer
+   1. An RGB LED to display mute state / hot-mic
+   1. An Arduino microcontroller to interface with the button and the LED. This is also what will communicate with your computer
 1. Code running on your computer to 
    1. recognize button presses to toggle microphone mute/unmute
    1. read microphone mute/unmute state and send information to the physical components to display status
