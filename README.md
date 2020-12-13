@@ -18,3 +18,10 @@ Mewt is made up of 2 parts:
 * read microphone mute/unmute state and send information to the physical components to display status
 * read microphone volume levels and send information to the physical components to display hot-mic
 
+# How it looks
+### Muted
+![Mewted](/images/mewt.png)
+### Unmuted
+![Unmewted](/images/unmewt.png)
+### Hot Mic
+![Hot Mic](/images/hotmic.gif)
