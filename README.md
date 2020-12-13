@@ -42,7 +42,7 @@ Deluxe | $8[![deluxelatching](/images/deluxelatching.png)](https://www.amazon.co
 ### 2. Get an Arduino microcontroller (~$10)
 Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
 **Things to consider**:
-* **Size**: Pro Micro is the smallest, followed closely by the Nano, Unos are pretty big
+* **Size**: Pro Micro is the smallest, followed closely by the Nano. Unos are pretty big
 * **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png).  _Headers are the pins that stick out from the Arduino_
 
 **Examples**: 
