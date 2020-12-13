@@ -1,11 +1,11 @@
 # Mewt
 Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single click in Windows and Mac**.  
 
-Mute/unmute occurs at the system level, so this **works for all conferencing software** (Zoom, Google Meet, Teams, WebEx, Blue Jeans, GoToMeeting, Skype, Slack, Facebook, Discord, etc.)
+Meet works at the operating system (OS) level, so this **will mute/unmute all conferencing software** (Zoom, Google Meet, Teams, WebEx, Blue Jeans, GoToMeeting, Skype, Slack, Facebook, Discord, etc.)
 
 Mewt will **continuously display the current Mute/Unmute state** so you can tell at a glance if your microphone is enabled without having to search for the onscreen icon.
 
-If your microphone is broadcasting, Mewt will also help you **avoid embarassing hot-mic incidents via RDB LED display**.
+If your microphone is broadcasting, Mewt will also help you **avoid embarassing hot-mic incidents via RGB LED light indicator**.
 Muted | Unmuted | Hot Mic
 ------------ | ------------- | -------------
 ![Mewted](/images/mewt.png) | ![Unmewted](/images/unmewt.png) | ![Hot Mic](/images/hotmic.gif)
