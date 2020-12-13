@@ -29,11 +29,8 @@ Mewt is made up of 2 parts:
 # How to build it
 <details>
  <summary>Click to expand</summary>
- inside buildit
-
 
 ## Get physical components
-
 
 ### 1. Get a button (~$3 - $20)
 * $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227)
@@ -60,49 +57,49 @@ Mewt is made up of 2 parts:
   Basic | $3[![basiclatching](/images/basiclatching.png)](https://www.amazon.com/dp/B07WGNSRXR) | $3[![basicmomentary](/images/basicmomentary.png)](https://www.amazon.com/dp/B07VSFLTMJ) | $3[![basictoggleswitch](/images/basictoggleswitch.png)](https://www.amazon.com/dp/B07SXRKY6C/) 
   Deluxe | $8[![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227) | $10[![deluxetoggleswitch](/images/deluxetoggleswitch.png)](https://www.amazon.com/gp/product/B008DG7NWQ) 
   </details>
-</details>
 
+  ### 2. Get an Arduino microcontroller (~$10)
+  * $8[![cheappromicro](/images/cheappromicro.png)](https://www.amazon.com/dp/B07J2Q3ZD5/)
+  <details>
+   <summary>Click to expand
 
-### 2. Get an Arduino microcontroller (~$10)
-* $8[![cheappromicro](/images/cheappromicro.png)](https://www.amazon.com/dp/B07J2Q3ZD5/)
-<details>
- <summary>Click to expand
+  **Things to consider**
+     </summary>
 
-**Things to consider**
-   </summary>
-   
-Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
-**Things to consider**:
-* **Size**: Pro Micro is the smallest, followed closely by the Nano. Unos are pretty big
-* **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png).  _Headers are the pins that stick out from the Arduino_
+  Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
+  **Things to consider**:
+  * **Size**: Pro Micro is the smallest, followed closely by the Nano. Unos are pretty big
+  * **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png).  _Headers are the pins that stick out from the Arduino_
 
-**Examples**: 
+  **Examples**: 
 
-_ | Pro Micro | Nano | Nano 
------------- | ------------- | ------------- | -------------
-Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
-With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
-Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
-</details>
+  _ | Pro Micro | Nano | Nano 
+  ------------ | ------------- | ------------- | -------------
+  Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
+  With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
+  Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
+  </details>
 
-### Naked Mewt
-You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit instead
+  ### Naked Mewt
+  You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit instead
 
-<details>
- <summary>Click to expand</summary> 
- 
-**Examples**: 
-* $37[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01D8KOZF4/)
+  <details>
+   <summary>Click to expand</summary> 
 
-It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs, resistors).  Plus you still have spare parts to make other projects when you're done!
+  **Examples**: 
+  * $37[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01D8KOZF4/)
 
-Alternately, you can buy the Arduino/breadboard individually.  If you are getting a button without an LED, you will have to get a separate RGB to display Mute/Unmute state and Hot Mic visualizer
-* $2[![rgb](/images/rgb.png)](https://www.amazon.com/dp/B07SJZGFBL/)
+  It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs, resistors).  Plus you still have spare parts to make other projects when you're done!
 
-Naked LEDs require a resistor so they don't burn out
+  Alternately, you can buy the Arduino/breadboard individually.  If you are getting a button without an LED, you will have to get a separate RGB to display Mute/Unmute state and Hot Mic visualizer
+  * $2[![rgb](/images/rgb.png)](https://www.amazon.com/dp/B07SJZGFBL/)
 
-**Examples**:
-* $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
+  Naked LEDs require a resistor so they don't burn out
+
+  **Examples**:
+  * $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
+
+  </details>
 
 </details>
 
