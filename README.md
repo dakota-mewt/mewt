@@ -20,3 +20,11 @@ Mewt is made up of 2 parts:
 * recognize button presses to toggle microphone mute/unmute
 * read microphone mute/unmute state and send information to the physical components to display status
 * read microphone volume levels and send information to the physical components to display hot-mic
+
+# How to build it
+## Physical components
+### Get an Arduino (~$2 - $8)
+Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  
+**Things to consider:**
+* Size: Pro Micro is the smallest, followed closely by the Nano, Unos are pretty big
+* To solder or not: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png)
