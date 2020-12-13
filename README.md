@@ -23,7 +23,7 @@ Mewt is made up of 2 parts:
 
 # How to build it
 ## Get physical components
-### 1. Get an Arduino (~$2 - $8)
+### 1. Get an Arduino (~$10)
 Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
 **Things to consider**:
 * **Size**: Pro Micro is the smallest, followed closely by the Nano, Unos are pretty big
