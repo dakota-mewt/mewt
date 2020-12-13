@@ -63,10 +63,10 @@ Mewt is made up of 2 parts:
 ### 2. Get an Arduino microcontroller (~$10)
 * $8[![cheappromicro](/images/cheappromicro.png)](https://www.amazon.com/dp/B07J2Q3ZD5/)
  <details>
- <summary>Click to expand
+  <summary>Click to expand
 
- **Things to consider**
-   </summary>
+  **Things to consider**
+    </summary>
 
  Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
  **Things to consider**:
