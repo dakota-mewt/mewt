@@ -24,6 +24,8 @@ Mewt is made up of 2 parts:
    1. recognize button presses to toggle microphone mute/unmute
    1. read microphone mute/unmute state and send information to the physical components to display status
    1. read microphone volume levels and send information to the physical components to display hot-mic
+![mewtdesign](/images/mewtdesign.png)
+
 </details>
 
 # How to build it
@@ -60,11 +62,11 @@ Mewt is made up of 2 parts:
 
 ### 2. Get an Arduino microcontroller (~$10)
 * $8[![cheappromicro](/images/cheappromicro.png)](https://www.amazon.com/dp/B07J2Q3ZD5/)
-<details>
- <summary>Click to expand
+  <details>
+   <summary>Click to expand
 
-**Things to consider**
-   </summary>
+  **Things to consider**
+     </summary>
 
 Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
 **Things to consider**:
@@ -83,8 +85,8 @@ Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://ww
 ### Naked Mewt
 You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit instead
 
-<details>
- <summary>Click to expand</summary> 
+  <details>
+   <summary>Click to expand</summary> 
 
 **Examples**: 
 * $37[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01D8KOZF4/)
@@ -99,28 +101,14 @@ Naked LEDs require a resistor so they don't burn out
 **Examples**:
 * $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
 
-</details>
+  </details>
 
-</details>
-
-# A collapsible section with markdown
-<details>
-  <summary>Click to expand!</summary>
-
- 
-  ## Heading
-
- 
-  1. A numbered
-  2. list
-     * With some
-     
-         <details>
-    <summary>Click to expand2</summary>
-     some other details
-    </details>
-     
-     * Sub bullets
-</details>
+  </details>
 
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
+
+# How to build it
+<details>
+ <summary>Click to expand</summary>
+ 
+ </details>
