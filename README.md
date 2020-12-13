@@ -23,17 +23,36 @@ Mewt is made up of 2 parts:
 
 # How to build it
 ## Get physical components
-### 1. Get an Arduino microcontroller (~$10)
+### 1. Get a button (~$)
+**Things to consider**:
+* **Size**: too small makes it hard to press, too big and it takes up desk space.  
+* **Depth**: shallower buttons are easier to mount
+* **LED**: you can find buttons without LED lights, with a single colored LED light, with two color LEDs, or even with RGB (Red/Green/Blue) LEDs.  Buttons with RGB LEDs allows Mewt to function fully, but they are also often bulkier, pricier and more difficult to wire.  
+* **State**: after you press it once, if it stays depressed (On state) and vice versa, it is called a "latching" button.  If after you press it, the button resets itself so that you can never tell if it's On or Off by visually looking at it, then it is called a "momentary" button.  Mewt works with either.
+* **Form factor**: Mewt can also work as a toggle switch instead of a button
+* **Wiring**: Common anode vs Common cathode.  Mewt works with either.  This just affects how you physically connect it to the Arduino.
+* **Voltage**: 3V-6V are best as that is what Arduinos output.  I have had no issues with 12V.  I don't think Arduinos can drive 120/220V.
+**Examples**: 
+
+_ |Latch | Momentary | Switch 
+------------- | ------------- | ------------- | -------------
+Basic | [$3](https://www.amazon.com/dp/B07WGNSRXR) | [$3](https://www.amazon.com/dp/B07VSFLTMJ) | [$3](https://www.amazon.com/dp/B07SXRKY6C/) 
+Deluxe | [$8](https://www.amazon.com/gp/product/B07KQ3P2Y2) | [$17](https://www.ebay.com/itm/333311892227) | [$10](https://www.amazon.com/gp/product/B008DG7NWQ) 
+
+
+### 3. Get an Arduino microcontroller (~$10)
 Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
 **Things to consider**:
 * **Size**: Pro Micro is the smallest, followed closely by the Nano, Unos are pretty big
-* **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png)
+* **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png).  _Headers are the pins that stick out from the Arduino_
 **Examples**: 
 
 _ | Pro Micro | Nano | Nano 
 ------------ | ------------- | ------------- | -------------
 Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
-With Headers  | N/A |  [$5.59](https://www.amazon.com/dp/B082HGQ24C/) | [$10.69](https://www.amazon.com/dp/B016D5KOO)
-Without Headers  | [$7.69](https://www.amazon.com/dp/B07J2Q3ZD5) | [$12.50](https://www.amazon.com/dp/B07VX7MX27) | N/A
+With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
+Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
+
+
 
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
