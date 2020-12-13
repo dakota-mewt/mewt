@@ -27,33 +27,40 @@ Mewt is made up of 2 parts:
 </details>
 
 # How to build it
+<details>
+ <summary>Click to expand</summary>
+ inside buildit
+
+
 ## Get physical components
+
+
 ### 1. Get a button (~$3 - $20)
 * $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227)
 
-<details>
- <summary>Click to expand
+  <details>
+   <summary>Click to expand
 
-**Things to consider**
-   </summary> 
+  **Things to consider**
+     </summary> 
 
-* **Size**: too small makes it hard to press, too big and it takes up desk space.  
-* **Depth**: shallower buttons are easier to mount
-* **LED**: you can find buttons without LED lights, with a single colored LED light, with two color LEDs, or even with RGB (Red/Green/Blue) LEDs.  Buttons with RGB LEDs allows Mewt to function fully, but they are also often bulkier, pricier and more difficult to wire.  
-* **State**: after you press it once, if it stays depressed (On state) and vice versa, it is called a "latching" button.  If after you press it, the button resets itself so that you can never tell if it's On or Off by visually looking at it, then it is called a "momentary" button.  Mewt works with either.
-* **Form factor**: Mewt can also work as a toggle switch instead of a button
-* **Wiring**: Common anode vs Common cathode.  Mewt works with either.  This just affects how you physically connect it to the Arduino.
-* **Voltage**: 3V-6V are best as that is what Arduinos output.  I have had no issues with 12V.  I don't think Arduinos can drive 120/220V.
-* **Resistor**: Buttons with built-in LEDs typically have resistors already and do not need separate resistors
+  * **Size**: too small makes it hard to press, too big and it takes up desk space.  
+  * **Depth**: shallower buttons are easier to mount
+  * **LED**: you can find buttons without LED lights, with a single colored LED light, with two color LEDs, or even with RGB (Red/Green/Blue) LEDs.  Buttons with RGB LEDs allows Mewt to function fully, but they are also often bulkier, pricier and more difficult to wire.  
+  * **State**: after you press it once, if it stays depressed (On state) and vice versa, it is called a "latching" button.  If after you press it, the button resets itself so that you can never tell if it's On or Off by visually looking at it, then it is called a "momentary" button.  Mewt works with either.
+  * **Form factor**: Mewt can also work as a toggle switch instead of a button
+  * **Wiring**: Common anode vs Common cathode.  Mewt works with either.  This just affects how you physically connect it to the Arduino.
+  * **Voltage**: 3V-6V are best as that is what Arduinos output.  I have had no issues with 12V.  I don't think Arduinos can drive 120/220V.
+  * **Resistor**: Buttons with built-in LEDs typically have resistors already and do not need separate resistors
 
-**Other Examples**: 
+  **Other Examples**: 
 
-_ |Latch | Momentary | Switch 
-------------- | ------------- | ------------- | -------------
-Basic | $3[![basiclatching](/images/basiclatching.png)](https://www.amazon.com/dp/B07WGNSRXR) | $3[![basicmomentary](/images/basicmomentary.png)](https://www.amazon.com/dp/B07VSFLTMJ) | $3[![basictoggleswitch](/images/basictoggleswitch.png)](https://www.amazon.com/dp/B07SXRKY6C/) 
-Deluxe | $8[![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227) | $10[![deluxetoggleswitch](/images/deluxetoggleswitch.png)](https://www.amazon.com/gp/product/B008DG7NWQ) 
+  _ |Latch | Momentary | Switch 
+  ------------- | ------------- | ------------- | -------------
+  Basic | $3[![basiclatching](/images/basiclatching.png)](https://www.amazon.com/dp/B07WGNSRXR) | $3[![basicmomentary](/images/basicmomentary.png)](https://www.amazon.com/dp/B07VSFLTMJ) | $3[![basictoggleswitch](/images/basictoggleswitch.png)](https://www.amazon.com/dp/B07SXRKY6C/) 
+  Deluxe | $8[![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227) | $10[![deluxetoggleswitch](/images/deluxetoggleswitch.png)](https://www.amazon.com/gp/product/B008DG7NWQ) 
+  </details>
 </details>
-
 
 
 ### 2. Get an Arduino microcontroller (~$10)
@@ -97,6 +104,26 @@ Naked LEDs require a resistor so they don't burn out
 **Examples**:
 * $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
 
+</details>
+
+# A collapsible section with markdown
+<details>
+  <summary>Click to expand!</summary>
+
+ 
+  ## Heading
+
+ 
+  1. A numbered
+  2. list
+     * With some
+     
+         <details>
+    <summary>Click to expand2</summary>
+     some other details
+    </details>
+     
+     * Sub bullets
 </details>
 
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
