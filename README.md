@@ -22,9 +22,18 @@ Mewt is made up of 2 parts:
    1. read microphone volume levels and send information to the physical components to display hot-mic
 
 # How to build it
-1. Get physical components
-   1. Get an Arduino (~$2 - $8)
+## Get physical components
+### 1. Get an Arduino (~$2 - $8)
 Any Arduino model (Pro Micro, Nano, Uno, etc) should work.  Pick the USB connector of your choice (Micro-USB, Mini-USB, UBS-C), Mewt is agnostic.  
 **Things to consider**:
 * **Size**: Pro Micro is the smallest, followed closely by the Nano, Unos are pretty big
 * **To solder or not**: if you don't want to solder, get an Uno or a Pro Micro/Nano with pre-soldered headers ![headers](/images/arduino-with-header.png) and a breadboard ![breadboard](/images/breadboard.png)
+**Examples**: 
+
+Consideration | Pro Micro | Nano | Nano 
+------------ | ------------- | ------------- | -------------
+Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
+With Headers  | N/A |  [$5.59](https://www.amazon.com/dp/B082HGQ24C/) | [$10.69](https://www.amazon.com/dp/B016D5KOO)
+Without Headers  | [$7.69](https://www.amazon.com/dp/B07J2Q3ZD5) | [$12.50](https://www.amazon.com/dp/B07VX7MX27) | N/A
+
+_Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
