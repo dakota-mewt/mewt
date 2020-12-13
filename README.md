@@ -22,7 +22,7 @@ Mewt is made up of 2 parts:
 
 # How to build it
 ## Get physical components
-### 1. Get a button (~$)
+### 1. Get a button (~$3 - $20)
 **Things to consider**:
 * **Size**: too small makes it hard to press, too big and it takes up desk space.  
 * **Depth**: shallower buttons are easier to mount
