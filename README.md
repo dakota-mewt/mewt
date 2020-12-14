@@ -129,7 +129,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). [![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** COM port somewhere, we'll need to reference it later
    </details>
- </details>
+ 
 
 * Linux
   <details>
@@ -141,9 +141,9 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** COM port somewhere, we'll need to reference it later
    </details>
 
-
-
 </details>
+
+
 
 # How you can support Mewt
 <details>
