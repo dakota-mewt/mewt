@@ -103,7 +103,46 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 ## Build physical components
 <details>
  <summary>Click to expand</summary>
- built
+
+### 1. Plug in your Arduino and find it's COM port
+* Windows
+  <details>
+   <summary>Click to expand</summary>
+ 
+   1. click Start [![clickstart](/images/screenshots/windows/clickstart.png)]
+   1. type in **_device manager_** to search and open [![devicemanager](/images/screenshots/windows/devicemanager.png)
+   1. scroll down to **_ports_** and expand it.  _Note: you may not see a Ports listing until after the next step, don't panic._
+   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+   1. the **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
+   1. you should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 [![ports](/images/screenshots/windows/ports.png)
+   1. jot down the COMx somewhere, we'll need to reference it later
+   * _If you do not see your Arduino here, or if you see a question mark icon, we will need to [Troubleshoot](#Troubleshooting)_
+   </details>
+
+* Mac
+  <details>
+   <summary>Click to expand</summary>
+   
+   1. click **_Finder->Applications->Utilities->Terminal_** [![terminal](/images/screenshots/mac/terminal.png)
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  [![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). [![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+   1. jot down the new entry **_/dev/tty.XXXXXXXX_** COM port somewhere, we'll need to reference it later
+   </details>
+ </details>
+
+* Linux
+  <details>
+   <summary>Click to expand</summary>
+   
+   1. in a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  [![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). [![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+   1. jot down the new entry **_/dev/tty.XXXXXXXX_** COM port somewhere, we'll need to reference it later
+   </details>
+
+
+
 </details>
 
 # How you can support Mewt
