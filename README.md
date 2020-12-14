@@ -100,11 +100,11 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
 </details>
 
-## Build physical components
+## Test physical components
 <details>
  <summary>Click to expand</summary>
 
-### 1. Plug in your Arduino and find it's COM port
+### 1. Plug in your Arduino and find its COM port
 * Windows
   <details>
    <summary>Click to expand</summary>
@@ -140,6 +140,13 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). [![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** COM port somewhere, we'll need to reference it later
    </details>
+
+### 2. Download and install the Arduino IDE and test your Arduino
+<details>
+ <summary>Click to expand</summary>
+
+* IDE
+</details>
 
 </details>
 
