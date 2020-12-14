@@ -153,15 +153,14 @@ _Note: these are not referral links, I do not benefit from you clicking on these
  ```c
  String a;
  void setup() {
- Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
+  Serial.begin(9600); // opens serial port, sets data rate to 9600 bps
  }
 
  void loop() {
- while(Serial.available()) {
- a= Serial.readString();// read the incoming data as string
- Serial.println(a);
- }
-
+  while(Serial.available()) {
+   a= Serial.readString();// read the incoming data as string
+   Serial.println(a);
+  }
  }
 ```
 1. select **_Sketch->Verify/Compile_**.  You can click **_Cancel_** when it prompts you to save the sketch folder.  [![verifycompile](/images/screenshots/arduino/verifycompile.png)
