@@ -101,13 +101,26 @@ Naked LEDs require a resistor so they don't burn out
 **Examples**:
 * $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
   </details>
-
+_Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
 </details>
 
-_Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
 
-# How to build it
+
+# How you can support Mewt
 <details>
  <summary>Click to expand</summary>
+ All I ask is that you take a moment to do something kind.  
  
+ Think of what you would have been willing to contribute to the Mewt project (however small the amount), and donate that to your favorite charity.
+ 
+ See someone hungry or cold?  Buy them a small meal or cheap socks.
+ 
+ Have elderly neighbors?  Offer to help shovel their driveway or mow their lawn.
+ 
+ People across the political divide have you on edge?  Bake them some cookies just to be nice.
+ 
+ Even something as simple as given a random stranger your best smile.  
+ 
+ If you can tell me via this [#UnMewtForGood SurveyMonkey](https://www.surveymonkey.com/r/DFHGL6H), it would really make my day.  I'm hoping we can push out $1000 and/or 100 hours of kindness from this little corner of the internet.
  </details>
+
