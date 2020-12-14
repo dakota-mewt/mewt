@@ -29,10 +29,9 @@ Mewt is made up of 2 parts:
 </details>
 
 # How to build it
+## Get physical components
 <details>
  <summary>Click to expand</summary>
-
-## Get physical components
 
 ### 1. Get a button (~$3 - $20)
 * $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227)
@@ -82,25 +81,19 @@ Mewt is made up of 2 parts:
   Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
   </details>
 
-### Naked Mewt
-You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids.  If so, consider getting an Arduino starter kit instead
-
+You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids. 
   <details>
-   <summary>Click to expand</summary> 
+   <summary>If so, click to expand</summary> 
+
+### Basic Mewt
 
 **Examples**: 
-* $37[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01D8KOZF4/)
+* $20[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01DGD2GAO/)
 
 It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs, resistors).  Plus you still have spare parts to make other projects when you're done!
 
-Alternately, you can buy the Arduino/breadboard individually.  If you are getting a button without an LED, you will have to get a separate RGB to display Mute/Unmute state and Hot Mic visualizer
-* $2[![rgb](/images/rgb.png)](https://www.amazon.com/dp/B07SJZGFBL/)
-
-Naked LEDs require a resistor so they don't burn out
-
-**Examples**:
-* $5[![resistor](/images/resistor.png)](https://www.amazon.com/dp/B008UTW6JG/)
-  </details>
+ </details>
+ 
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
 </details>
 
@@ -109,18 +102,19 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 # How you can support Mewt
 <details>
  <summary>Click to expand</summary>
+ 
  All I ask is that you take a moment to do something kind.  
+  
+ * Think of what you would have been willing to contribute to the Mewt project (however small the amount), and donate that to your favorite charity instead.
  
- Think of what you would have been willing to contribute to the Mewt project (however small the amount), and donate that to your favorite charity.
+ * See someone hungry or cold?  Buy them a small meal or cheap socks.
  
- See someone hungry or cold?  Buy them a small meal or cheap socks.
+ * Have elderly neighbors?  Offer to help shovel their driveway or mow their lawn.
  
- Have elderly neighbors?  Offer to help shovel their driveway or mow their lawn.
+ * People across the political divide have you on edge?  Bake them some cookies just to be nice.
  
- People across the political divide have you on edge?  Bake them some cookies just to be nice.
+ * Even something as simple as given a random stranger your best smile.  
  
- Even something as simple as given a random stranger your best smile.  
- 
- If you can tell me via this [#UnMewtForGood SurveyMonkey](https://www.surveymonkey.com/r/DFHGL6H), it would really make my day.  I'm hoping we can push out $1000 and/or 100 hours of kindness from this little corner of the internet.
+ If you can report back via this 5 second [#UnMewtForGood questionnaire](https://www.surveymonkey.com/r/DFHGL6H), it would really make my day.  I'm hoping we can push out $1000 and/or 100 hours of kindness from this little corner of the internet.
  </details>
 
