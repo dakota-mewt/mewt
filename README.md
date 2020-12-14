@@ -81,13 +81,16 @@ Mewt is made up of 2 parts:
   Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
   </details>
 
+
+### 3. Get wires, solder, soldering iron
+
 You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids. 
   <details>
-   <summary>If so, click to expand</summary> 
+   <summary>If so, click here to expand</summary> 
 
 ### Basic Mewt
 
-**Examples**: 
+**Get an Arduino Starter Kit**: 
 * $20[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01DGD2GAO/)
 
 It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs, resistors).  Plus you still have spare parts to make other projects when you're done!
@@ -97,7 +100,11 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
 </details>
 
-
+## Build physical components
+<details>
+ <summary>Click to expand</summary>
+ built
+</details>
 
 # How you can support Mewt
 <details>
