@@ -149,6 +149,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 1. go to [The Arduino Download Page](https://www.arduino.cc/en/software) to download the latest IDE for your OS
 1. install and launch the IDE
 1. select **_File->New_** and delete everything in the new window that opens up
+1. select **_Tools->Board_** and choose your Arduino model.  _for Pro Micros, choose Arduino Leonardo_ ![boards](/images/screenshots/arduino/boards.png)
 1. select **_Tools->Ports_** and choose the same serial port that you jotted down earlier ![portselection](/images/screenshots/arduino/portselection.png)
 1. in the editor window paste in this code borrowed from **Abdullah Al Mamun** from [Instructables.com](https://www.instructables.com/Arduino-Function-Serialread-And-SerialreadString/) 
  ```c
