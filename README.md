@@ -179,13 +179,15 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 <details>
  <summary>Click to expand</summary>
 
+* **SPST/SPDT/DPST/DPDT**: Here's a [link that explains](https://spemco.com/blog/single-pole-triple-throw-triple-pole-single-throw-spst-dpdt-etc-how-to-tell-the-difference) it.
+
 **If your button is a SPST**
    <details>
    <summary>Click to expand</summary>
    
    Then, it should have 2 switch terminals.  
    * A Common (sometimes labeled **C**)
-   * A Normally Open (sometimes labeled **NC**)
+   * A Normally Open (sometimes labeled **NO**)
    
    </details>
 
@@ -200,6 +202,8 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    * A Normally Closed (sometimes labeled **NC**)
    
    </details>
+   
+
 
 * Connect the **NO** terminal to **D2** on your Arduino
 * Connect the **C** terminal to **GND** on your Arduino
