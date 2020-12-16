@@ -110,12 +110,15 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
  
-   1. click Start [![clickstart](/images/screenshots/windows/clickstart.png)]
-   1. type in **_device manager_** to search and open ![devicemanager](/images/screenshots/windows/devicemanager.png)
+   1. click Start 
+   [![clickstart](/images/screenshots/windows/clickstart.png)]
+   1. type in **_device manager_** to search and open 
+   ![devicemanager](/images/screenshots/windows/devicemanager.png)
    1. scroll down to **_ports_** and expand it.  _Note: you may not see a Ports listing until after the next step, don't panic._
    1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
    1. the **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
-   1. you should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 ![ports](/images/screenshots/windows/ports.png)
+   1. you should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 
+   ![ports](/images/screenshots/windows/ports.png)
    1. jot down the COMx serial port somewhere, we'll need to reference it later
    * _If you do not see your Arduino here, or if you see a question mark icon, we will need to [Troubleshoot](#Troubleshooting)_
    </details>
@@ -124,10 +127,13 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
    
-   1. click **_Finder->Applications->Utilities->Terminal_** ![terminal](/images/screenshots/mac/terminal.png)
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+   1. click **_Finder->Applications->Utilities->Terminal_** 
+   ![terminal](/images/screenshots/mac/terminal.png)
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
+   ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
    1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
+   ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
    </details>
  
@@ -136,9 +142,11 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
    
-   1. in a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+   1. in a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
+   ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
    1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
+   ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
    </details>
 
@@ -149,8 +157,10 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 1. go to [The Arduino Download Page](https://www.arduino.cc/en/software) to download the latest IDE for your OS
 1. install and launch the IDE
 1. select **_File->New_** and delete everything in the new window that opens up
-1. select **_Tools->Board_** and choose your Arduino model.  _for Pro Micros, choose Arduino Leonardo_ ![boards](/images/screenshots/arduino/boards.png)
-1. select **_Tools->Ports_** and choose the same serial port that you jotted down earlier ![portselection](/images/screenshots/arduino/portselection.png)
+1. select **_Tools->Board_** and choose your Arduino model.  _for Pro Micros, choose Arduino Leonardo_ 
+![boards](/images/screenshots/arduino/boards.png)
+1. select **_Tools->Ports_** and choose the same serial port that you jotted down earlier 
+![portselection](/images/screenshots/arduino/portselection.png)
 1. in the editor window paste in this code borrowed from **Abdullah Al Mamun** from [Instructables.com](https://www.instructables.com/Arduino-Function-Serialread-And-SerialreadString/) 
  ```c
  String a;
@@ -165,17 +175,40 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   }
  }
 ```
-1. select **_Sketch->Verify/Compile_**.  You can click **_Cancel_** when it prompts you to save the sketch folder.  ![verifycompile](/images/screenshots/arduino/verifycompile.png)
-1. you should see a green **Done Compiling** status at the bottom of your Arduino window ![donecompiling](/images/screenshots/arduino/donecompiling.png)
-1. select **_Sketch->Upload_**.  You will be prompted to save again, feel free to click **_Cancel_** again. ![upload](/images/screenshots/arduino/upload.png)
-1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. ![doneuploading](/images/screenshots/arduino/doneuploading.png)
-1. if you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  ![processorbootloader](/images/screenshots/arduino/processorbootloader.png)
-1. select **_Tools->Serial Monitor_** ![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
-1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
+
+1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+![verifycompile](/images/screenshots/arduino/verifycompile.png)
+1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+![donecompiling](/images/screenshots/arduino/donecompiling.png)
+1. select **_Sketch->Upload_**.
+![upload](/images/screenshots/arduino/upload.png)
+1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+![doneuploading](/images/screenshots/arduino/doneuploading.png)
+1. if you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  
+![processorbootloader](/images/screenshots/arduino/processorbootloader.png)
+1. select **_Tools->Serial Monitor_** 
+![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
+1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
+![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
 1. in the text box, type in **_Hello World_** and click **_Send_**
-1. if all goes well, you should see the same words show up below the text box next to a timestamp ![helloworld](/images/screenshots/arduino/helloworld.png)
-1. **Congratulations** if this is your first Arduino program!  
+1. if all goes well, you should see the same words show up below the text box next to a timestamp 
+![helloworld](/images/screenshots/arduino/helloworld.png)
+1. **Congratulations** if this is your first Arduino program!  Go get a gummi bear and shove it in your face!
+ <details>
+  <summary>
+   
+   _Curious as to what the program did?_
+   </summary>
+  
+  It created a variable (**a**) to be a placeholder.  It then set speed at which the Arduino communicates with the computer over the Serial port (interesting tidbit, USB stands for _Universal **Serial** Bus_) to 9600 bauds.  Remember that is also the speed that we are using to monitor the iteractions.  
+  
+  After that, it runs an infinite loop that checks the Serial port for data.  If there's no data, it does nothing.  But since it's an infinite loop, it will immediately check the Serial port for data again.  This happens over and over again until finally you type in "Hello World" and hit Send.  That sends the data from your computer over the Serial port to the Arduino.  The check detects data when this happens.  It will then use the variable (**a**) to temporarily hold on to that data.  Lastly, it will dump that data back onto the Serial port for the computer to display.
+  
+  This is why everything you type in the text box will show up in the output window after a small delay.
+ </details>
 </details>
+
+
 
 ### 3. Test your button 
 <details>
@@ -212,6 +245,147 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 _Consider testing with jumper cables and a breadboard rather than directly soldering.  It is easier to identify faulty components or make changes this way._**
 * 
   ![buttontestwiring](/images/buttontestwiring.png)
+* in the editor window paste in [this code](/tests/mewt-component-test.ino) 
+  <details>
+  <summary>
+   
+   _See the code_
+   </summary>
+
+   ```c
+   const int led0 = 0;     
+   const int led1 = 1;     
+   const int led3 = 3;     
+   const int led4 = 4;     
+   const int led5 = 5;     
+   const int led6 = 6;     
+   const int led7 = 7;     
+   const int led8 = 8;     
+   const int led9 = 9;     
+   const int led10 = 10;     
+   const int led11 = 11;     
+   const int led12 = 12; 
+   const int led13 = 13; 
+   const int led14 = 14;     
+   const int led15 = 15;     
+   const int led16 = 16;     
+   const int led17 = 17;     
+   const int led18 = 18;     
+   const int led19 = 19;     
+   const int led20 = 20;     
+   const int led21 = 21;     
+
+   const int mewtButton = 2;     
+         int mewtState = 0;
+         byte inByte;     
+         int inInt;
+
+   void setup() {
+     Serial.begin(9600);
+     Serial.setTimeout(50);
+     // initialize digital pin LED_BUILTIN as an output.
+     pinMode(LED_BUILTIN, OUTPUT);
+     pinMode(led0, OUTPUT);
+     pinMode(led1, OUTPUT);
+     pinMode(led3, OUTPUT);
+     pinMode(led4, OUTPUT);
+     pinMode(led5, OUTPUT);
+     pinMode(led6, OUTPUT);
+     pinMode(led7, OUTPUT);
+     pinMode(led8, OUTPUT);
+     pinMode(led9, OUTPUT);
+     pinMode(led10, OUTPUT);
+     pinMode(led11, OUTPUT);
+     pinMode(led12, OUTPUT);
+     pinMode(led13, OUTPUT);
+     pinMode(led14, OUTPUT);
+     pinMode(led15, OUTPUT);
+     pinMode(led16, OUTPUT);
+     pinMode(led17, OUTPUT);
+     pinMode(led18, OUTPUT);
+     pinMode(led19, OUTPUT);
+     pinMode(led20, OUTPUT);
+     pinMode(led21, OUTPUT);
+     pinMode(mewtButton, INPUT_PULLUP);   
+   }
+
+   // the loop function runs over and over again forever
+   void loop() {    
+     digitalWrite(led0, HIGH);
+     digitalWrite(led1, HIGH);
+     digitalWrite(led3, HIGH);
+     digitalWrite(led4, HIGH);
+     digitalWrite(led5, HIGH);
+     digitalWrite(led6, HIGH);
+     digitalWrite(led7, HIGH);
+     digitalWrite(led9, HIGH);
+     digitalWrite(led10, HIGH);
+     digitalWrite(led11, HIGH);
+     digitalWrite(led12, HIGH);
+     digitalWrite(led13, HIGH);
+     digitalWrite(led14, HIGH);
+     digitalWrite(led15, HIGH);
+     digitalWrite(led16, HIGH);
+     digitalWrite(led17, HIGH);
+     digitalWrite(led18, HIGH);
+     digitalWrite(led19, HIGH);
+     digitalWrite(led20, HIGH);
+     digitalWrite(led21, HIGH);
+     mewtState = digitalRead(mewtButton);
+
+     if (mewtState == LOW) {
+       digitalWrite(LED_BUILTIN, HIGH);  
+       Serial.println("pressed");      
+       delay(50);
+     }
+     if (mewtState == HIGH) {
+       digitalWrite(LED_BUILTIN, LOW);  
+       Serial.println("released");      
+       delay(50);
+     }
+   }
+   ```
+ </details> 
+
+1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+![verifycompile](/images/screenshots/arduino/verifycompile.png)
+1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+![donecompiling](/images/screenshots/arduino/donecompiling.png)
+1. select **_Sketch->Upload_**.  
+![upload](/images/screenshots/arduino/upload.png)
+1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+![doneuploading](/images/screenshots/arduino/doneuploading.png)
+1. if you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  
+![processorbootloader](/images/screenshots/arduino/processorbootloader.png)
+1. select **_Tools->Serial Monitor_** 
+![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
+1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
+![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
+1. if all goes well, you should see the word **pressed** in the output window every time you press the button.  It should display **released** when you let go of the button.
+![buttontest](/images/screenshots/arduino/buttontest.png)
+1. if you get the opposite result of what you are looking for (output says **pressed** when you release the button and it says **released** when you press the button), simply swap the wires connecting to the button terminals
+1. **Congratulations** if this is your first time connecting a piece of physical hardware to your code!  Go get another gummi bear and shove it in your face! 
+
+ <details>
+  <summary>
+   
+   _Curious as to what the program did?_
+   </summary>
+It sets a variable (**mewtButton**) to the Arduino #2 pin, and creates a variable (**mewtState**).  
+
+It sets the Serial speed to be 9600, and a timeout of 50 (milliseconds).  The default timeout is 1 second, so a 50 millisecond time will allow faster responses from the Arduino.
+
+We also initialize **LED_BUILTIN** (Arduino's built-in LED) and the MewtButton.  **INPUT_PULLUP** uses Arduino's built-in resistor so you can avoid having to physically wire in a resistor to make the button work.
+
+_ignore all the references to **led**, those are for later when we test the LEDs_
+
+Inside the infinite loop, we read the current state from **mewtButton**, which is reading from Arduino's #2 pin, and puts it into **mewtState** variable.  
+
+Then we check the value of the state.  If it is **LOW**, then that means that the button has been pressed.  We then output that state by turning on **LED_BUILTIN** and also write **pressed** on the serial port to be displayed by the computer.  That will happen as long as the button is pressed.
+
+If we release the button, then **mewtState** would be **HIGH**.  We then output that state by turning off **LED_BUILTIN** and also write **released** on the serial port to be displayed by the computer.  That will happen as long as the button is pressed.
+ </details>
+
 </details>
 </details>
 
