@@ -246,7 +246,8 @@ _Consider testing with jumper cables and a breadboard rather than directly solde
 * 
   ![buttontestwiring](/images/buttontestwiring.png)
 * in the editor window paste in [this code](/tests/mewt-component-test.ino) 
-  <details>
+  
+ <details>
   <summary>
    
    _See the code_
@@ -345,7 +346,7 @@ _Consider testing with jumper cables and a breadboard rather than directly solde
      }
    }
    ```
- </details> 
+ </details>   
 
 1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
 ![verifycompile](/images/screenshots/arduino/verifycompile.png)
