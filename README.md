@@ -240,10 +240,10 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    
 
 
-* Connect the **NO** terminal to **D2** on your Arduino
-* Connect the **C** terminal to **GND** on your Arduino
-_Consider testing with jumper cables and a breadboard rather than directly soldering.  It is easier to identify faulty components or make changes this way._**
-* 
+* Connect the button **NO** terminal to **D2** on your Arduino
+* Connect the button **C** terminal to **GND** on your Arduino
+
+_Consider testing with jumper cables and a breadboard rather than directly soldering.  It is easier to identify faulty components or make changes this way._
   ![buttontestwiring](/images/buttontestwiring.png)
 * in the editor window paste in [this code](/tests/mewt-component-test.ino) 
   
