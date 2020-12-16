@@ -47,9 +47,10 @@ Mewt is made up of 2 parts:
   * **LED**: you can find buttons without LED lights, with a single colored LED light, with two color LEDs, or even with RGB (Red/Green/Blue) LEDs.  Buttons with RGB LEDs allows Mewt to function fully, but they are also often bulkier, pricier and more difficult to wire.  
   * **State**: after you press it once, if it stays depressed (On state) and vice versa, it is called a "latching" button.  If after you press it, the button resets itself so that you can never tell if it's On or Off by visually looking at it, then it is called a "momentary" button.  Mewt works with either.
   * **Form factor**: Mewt can also work as a toggle switch instead of a button
-  * **Wiring**: Common anode vs Common cathode.  Mewt works with either.  This just affects how you physically connect it to the Arduino.
+  * **Common anode vs Common cathode**:  Mewt works with either.  This just affects how you physically connect it to the Arduino.
   * **Voltage**: 3V-6V are best as that is what Arduinos output.  I have had no issues with 12V.  I don't think Arduinos can drive 120/220V.
   * **Resistor**: Buttons with built-in LEDs typically have resistors already and do not need separate resistors
+  * **SPST/SPDT/DPST/DPDT**: Super confusing, right?  Here's a [link that explains](https://spemco.com/blog/single-pole-triple-throw-triple-pole-single-throw-spst-dpdt-etc-how-to-tell-the-difference) it. TL;DR: get an SPST or SPDT.  avoid DPST/DPDT, they're overkill.
 
   **Other Examples**: 
 
@@ -174,6 +175,37 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 1. **Congratulations** if this is your first Arduino program!  
 </details>
 
+### 3. Test your button 
+<details>
+ <summary>Click to expand</summary>
+
+**If your button is a SPST**
+   <details>
+   <summary>Click to expand</summary>
+   
+   Then, it should have 2 switch terminals.  
+   * A Common (sometimes labeled **C**)
+   * A Normally Open (sometimes labeled **NC**)
+   
+   </details>
+
+**If your button is a SPDT**
+   <details>
+   <summary>Click to expand</summary>
+   
+   Then, it should have 3 switch terminals.  
+   ![spdtschematics](/images/spdtschematics.png)
+   * A Common (sometimes labeled **C**)
+   * A Normally Open (sometimes labeled **NO**)
+   * A Normally Closed (sometimes labeled **NC**)
+   
+   </details>
+
+* Connect the **NO** terminal to **D2** on your Arduino
+* Connect the **C** terminal to **GND** on your Arduino
+* _Preferably make connections with jumper cables and a breadboard rather than directly soldering_**
+  ![buttontestwiring](/images/buttontestwiring.png)
+</details>
 </details>
 
 
