@@ -56,8 +56,8 @@ Mewt is made up of 2 parts:
 
   _ |Latch | Momentary | Switch 
   ------------- | ------------- | ------------- | -------------
-  Basic | $3[![basiclatching](/images/basiclatching.png)](https://www.amazon.com/dp/B07WGNSRXR) | $3[![basicmomentary](/images/basicmomentary.png)](https://www.amazon.com/dp/B07VSFLTMJ) | $3[![basictoggleswitch](/images/basictoggleswitch.png)](https://www.amazon.com/dp/B07SXRKY6C/) 
-  Deluxe | $8[![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227) | $10[![deluxetoggleswitch](/images/deluxetoggleswitch.png)](https://www.amazon.com/gp/product/B008DG7NWQ) 
+  Basic | $3![basiclatching](/images/basiclatching.png)](https://www.amazon.com/dp/B07WGNSRXR) | $3![basicmomentary](/images/basicmomentary.png)](https://www.amazon.com/dp/B07VSFLTMJ) | $3![basictoggleswitch](/images/basictoggleswitch.png)](https://www.amazon.com/dp/B07SXRKY6C/) 
+  Deluxe | $8![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227) | $10![deluxetoggleswitch](/images/deluxetoggleswitch.png)](https://www.amazon.com/gp/product/B008DG7NWQ) 
   </details>
 
 ### 2. Get an Arduino microcontroller (~$10)
@@ -111,11 +111,11 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    <summary>Click to expand</summary>
  
    1. click Start [![clickstart](/images/screenshots/windows/clickstart.png)]
-   1. type in **_device manager_** to search and open [![devicemanager](/images/screenshots/windows/devicemanager.png)
+   1. type in **_device manager_** to search and open ![devicemanager](/images/screenshots/windows/devicemanager.png)
    1. scroll down to **_ports_** and expand it.  _Note: you may not see a Ports listing until after the next step, don't panic._
    1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
    1. the **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
-   1. you should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 [![ports](/images/screenshots/windows/ports.png)
+   1. you should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 ![ports](/images/screenshots/windows/ports.png)
    1. jot down the COMx serial port somewhere, we'll need to reference it later
    * _If you do not see your Arduino here, or if you see a question mark icon, we will need to [Troubleshoot](#Troubleshooting)_
    </details>
@@ -124,10 +124,10 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
    
-   1. click **_Finder->Applications->Utilities->Terminal_** [![terminal](/images/screenshots/mac/terminal.png)
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  [![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+   1. click **_Finder->Applications->Utilities->Terminal_** ![terminal](/images/screenshots/mac/terminal.png)
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
    1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). [![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
    </details>
  
@@ -136,9 +136,9 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
    
-   1. in a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  [![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
+   1. in a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
    1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). [![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
+   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
    </details>
 
@@ -149,7 +149,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 1. go to [The Arduino Download Page](https://www.arduino.cc/en/software) to download the latest IDE for your OS
 1. install and launch the IDE
 1. select **_File->New_** and delete everything in the new window that opens up
-1. select **_Tools->Ports_** and choose the same serial port that you jotted down earlier [![portselection](/images/screenshots/arduino/portselection.png)
+1. select **_Tools->Ports_** and choose the same serial port that you jotted down earlier ![portselection](/images/screenshots/arduino/portselection.png)
 1. in the editor window paste in this code borrowed from **Abdullah Al Mamun** from [Instructables.com](https://www.instructables.com/Arduino-Function-Serialread-And-SerialreadString/) 
  ```c
  String a;
@@ -164,14 +164,15 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   }
  }
 ```
-1. select **_Sketch->Verify/Compile_**.  You can click **_Cancel_** when it prompts you to save the sketch folder.  [![verifycompile](/images/screenshots/arduino/verifycompile.png)
-1. you should see a green **Done Compiling** status at the bottom of your Arduino window [![donecompiling](/images/screenshots/arduino/donecompiling.png)
-1. select **_Sketch->Upload_**.  You will be prompted to save again, feel free to click **_Cancel_** again. [![upload](/images/screenshots/arduino/upload.png)
-1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. [![doneuploading](/images/screenshots/arduino/doneuploading.png)
-1. select **_Tools->Serial Monitor_** [![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
-1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** [![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
+1. select **_Sketch->Verify/Compile_**.  You can click **_Cancel_** when it prompts you to save the sketch folder.  ![verifycompile](/images/screenshots/arduino/verifycompile.png)
+1. you should see a green **Done Compiling** status at the bottom of your Arduino window ![donecompiling](/images/screenshots/arduino/donecompiling.png)
+1. select **_Sketch->Upload_**.  You will be prompted to save again, feel free to click **_Cancel_** again. ![upload](/images/screenshots/arduino/upload.png)
+1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. ![doneuploading](/images/screenshots/arduino/doneuploading.png)
+1. if you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  ![processorbootloader](/images/screenshots/arduino/processorbootloader.png)
+1. select **_Tools->Serial Monitor_** ![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
+1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
 1. in the text box, type in **_Hello World_** and click **_Send_**
-1. if all goes well, you should see the same words show up below the text box next to a timestamp [![helloworld](/images/screenshots/arduino/helloworld.png)
+1. if all goes well, you should see the same words show up below the text box next to a timestamp ![helloworld](/images/screenshots/arduino/helloworld.png)
 1. **Congratulations** if this is your first Arduino program!  
 </details>
 
@@ -207,7 +208,8 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 
 * Connect the **NO** terminal to **D2** on your Arduino
 * Connect the **C** terminal to **GND** on your Arduino
-* _Preferably make connections with jumper cables and a breadboard rather than directly soldering_**
+_Consider testing with jumper cables and a breadboard rather than directly soldering.  It is easier to identify faulty components or make changes this way._**
+* 
   ![buttontestwiring](/images/buttontestwiring.png)
 </details>
 </details>
