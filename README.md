@@ -76,8 +76,8 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 
   **Examples**: 
 
-  _ | Pro Micro | Nano | Nano 
-  ------------ | ------------- | ------------- | -------------
+  _ | Pro Micro | Nano | Uno 
+  :------------: | :-------------: | :-------------: | :-------------:
   Size | Smallest ![promicro](/images/promicro.png) | Slightly larger ![nano](/images/nano.png)| Large ![uno](/images/uno.png)
   With Headers  | N/A |  [$6](https://www.amazon.com/dp/B082HGQ24C/) | [$11](https://www.amazon.com/dp/B016D5KOO)
   Without Headers  | [$8](https://www.amazon.com/dp/B07J2Q3ZD5) | [$13](https://www.amazon.com/dp/B07VX7MX27) | N/A
@@ -344,7 +344,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <details>
    <summary>Click to expand</summary>
       
-   * A Common (sometimes labeled **C**) - you will connect this to **GND** on your Arduino
+   * A Common (sometimes labeled **C** or **-**) - you will connect this to **GND** on your Arduino
    * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
    ![ledtestwiring-commoncathode](/images/ledtestwiring-commoncathode.png)
 
@@ -433,7 +433,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <details>
    <summary>Click to expand</summary>
    
-   * A Common (sometimes labeled **C**) - you will connect this to **VCC** or **5V** on your Arduino
+   * A Common (sometimes labeled **C** or **+**) - you will connect this to **5V** on your Arduino
    * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
    ![ledtestwiring-commonannode](/images/ledtestwiring-commonannode.png)
    
@@ -563,7 +563,21 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
 <details>
  <summary>Click to expand</summary>
 
-assemble
+Connect your button/LED to your Arduino using the wiring applicable to your components
+
+* Button terminal -> D2
+* Button common -> GND
+* LED red -> D4
+* LED blue -> D7
+* LED green -> D9
+* LED common (anode) -> 5V
+* LED common (cathode) -> GND
+
+  _ | Common Cathode LED | Common Anode LED 
+  :------------: | :-------------: | :-------------: 
+  Deluxe (no additional resistors)| ![mewtwiring-commoncathode](/images/mewtwiring-commoncathode.png) | ![mewtwiring-commonannode](/images/mewtwiring-commonannode.png) 
+  Basic (with resistors)  | ![mewtbasicwiring-commoncathode](/images/mewtbasicwiring-commoncathode.png) | ![mewtbasicwiring-commonannode](/images/mewtbasicwiring-commonannode.png) 
+  
 </details>
 
 # How you can support Mewt
