@@ -388,9 +388,6 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
  </details>
 
 </details>
-</details>
-
-
 
 ### 4. Test your LED 
 <details>
@@ -418,6 +415,8 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
 
 * if your Arduino is already running the program to test your button from above, then you should see your LED 
 LED
+</details>
+
 </details>
 
 # How you can support Mewt
