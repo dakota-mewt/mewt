@@ -115,7 +115,7 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
    <summary>Click to expand</summary>
  
    1. click Start 
-   [![clickstart](/images/screenshots/windows/clickstart.png)]
+   ![clickstart](/images/screenshots/windows/clickstart.png)
    1. type in **_device manager_** to search and open 
    ![devicemanager](/images/screenshots/windows/devicemanager.png)
    1. scroll down to **_ports_** and expand it.  _Note: you may not see a Ports listing until after the next step, don't panic._
