@@ -625,12 +625,12 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 
   Type this into Arduino text box | This should light up
   :------------: | :-------------: 
-  **0** | Red [momentary_common_cathode.ino](/code/arduino/momentary_common_cathode.ino) 
-  **1**  | Blue [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
-  **2**  | Green [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
-  **3**  | Purple (Green + Blue) [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
-  **4**  | Yellow (Red + Green) [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
-  **5**  | White (Red + Blue + Green) [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+  **0** | Red ![red](/images/red.jpg) 
+  **1**  | Blue ![blue](/images/blue.jpg) 
+  **2**  | Green ![green](/images/green.jpg) 
+  **3**  | Purple ![purple](/images/purple.jpg) 
+  **4**  | Yellow ![yellow](/images/yellow.jpg) 
+  **5**  | White ![white](/images/white.jpg) 
   **101**  | Flash Green 3x [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
     
 </details>
