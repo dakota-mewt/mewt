@@ -57,8 +57,8 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 
   _ |Latch | Momentary | Switch 
   :-------------: | :-------------: | :-------------: | :-------------:
-  Basic | $3![basiclatching](/images/basiclatching.png)(https://www.amazon.com/dp/B07WGNSRXR) | $3![basicmomentary](/images/basicmomentary.png)(https://www.amazon.com/dp/B07VSFLTMJ) | $3![basictoggleswitch](/images/basictoggleswitch.png)(https://www.amazon.com/dp/B07SXRKY6C/) 
-  Deluxe | $8![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18![deluxemomentary](/images/deluxemomentary.png)(https://www.ebay.com/itm/333311892227) | $10![deluxetoggleswitch](/images/deluxetoggleswitch.png)(https://www.amazon.com/gp/product/B008DG7NWQ) 
+  Basic | ![basiclatching](/images/basiclatching.png)[$3](https://www.amazon.com/dp/B07WGNSRXR) | ![basicmomentary](/images/basicmomentary.png)[$3](https://www.amazon.com/dp/B07VSFLTMJ) | ![basictoggleswitch](/images/basictoggleswitch.png)[$3](https://www.amazon.com/dp/B07SXRKY6C/) 
+  Deluxe | ![deluxelatching](/images/deluxelatching.png)[$8](https://www.amazon.com/gp/product/B07KQ3P2Y2) | ![deluxemomentary](/images/deluxemomentary.png)[$18](https://www.ebay.com/itm/333311892227) | ![deluxetoggleswitch](/images/deluxetoggleswitch.png)[$10](https://www.amazon.com/gp/product/B008DG7NWQ) 
   </details>
 
 ### 2. Get an Arduino microcontroller (~$10)
@@ -86,11 +86,15 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 
 ### 3. Get wires, solder, soldering iron
 
-You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids. 
+### Don't want to solder?
+
   <details>
    <summary>If so, click here to expand</summary> 
 
 ### Basic Mewt
+You may be interested in building a simplified version of Mewt because you don't want to solder, or because it is a good way to learn/experiment, or as a project for your kids. 
+
+![mewtbasic](/images/mewtbasic.gif)
 
 **Get an Arduino Starter Kit**: 
 * $20[![arduinostarterkit](/images/arduinostarterkit.png)](https://www.amazon.com/dp/B01DGD2GAO/)
