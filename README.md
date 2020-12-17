@@ -33,6 +33,7 @@ Mewt is made up of 2 parts:
 <details>
  <summary>Click to expand</summary>
 
+_Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
 ### 1. Get a button (~$3 - $20)
 * $18[![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227)
 
@@ -98,7 +99,7 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 
  </details>
  
-_Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for Amazon or specific 3rd party merchants.  These are purely to help people get started_
+
 </details>
 
 ## Test physical components
