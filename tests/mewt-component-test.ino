@@ -26,9 +26,9 @@ const int mewtButton = 2;
       int inInt;
 
 void setup() {
-    Serial.begin(9600);
-      Serial.setTimeout(50);
-// initialize digital pin LED_BUILTIN as an output.
+  Serial.begin(9600);
+  Serial.setTimeout(50);
+  // initialize digital pin LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
   pinMode(led0, OUTPUT);
   pinMode(led1, OUTPUT);
@@ -56,36 +56,37 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {    
-digitalWrite(led0, HIGH);
-digitalWrite(led1, HIGH);
-digitalWrite(led3, HIGH);
-digitalWrite(led4, HIGH);
-digitalWrite(led5, HIGH);
-digitalWrite(led6, HIGH);
-digitalWrite(led7, HIGH);
-digitalWrite(led9, HIGH);
-digitalWrite(led10, HIGH);
-digitalWrite(led11, HIGH);
-digitalWrite(led12, HIGH);
-digitalWrite(led13, HIGH);
-digitalWrite(led14, HIGH);
-digitalWrite(led15, HIGH);
-digitalWrite(led16, HIGH);
-digitalWrite(led17, HIGH);
-digitalWrite(led18, HIGH);
-digitalWrite(led19, HIGH);
-digitalWrite(led20, HIGH);
-digitalWrite(led21, HIGH);
-mewtState = digitalRead(mewtButton);
+  digitalWrite(led0, LOW);
+  digitalWrite(led1, LOW);
+  digitalWrite(led3, LOW);
+  digitalWrite(led4, LOW);
+  digitalWrite(led5, LOW);
+  digitalWrite(led6, LOW);
+  digitalWrite(led7, LOW);
+  digitalWrite(led9, LOW);
+  digitalWrite(led10, LOW);
+  digitalWrite(led11, LOW);
+  digitalWrite(led12, LOW);
+  digitalWrite(led13, LOW);
+  digitalWrite(led14, LOW);
+  digitalWrite(led15, LOW);
+  digitalWrite(led16, LOW);
+  digitalWrite(led17, LOW);
+  digitalWrite(led18, LOW);
+  digitalWrite(led19, LOW);
+  digitalWrite(led20, LOW);
+  digitalWrite(led21, LOW);
+  mewtState = digitalRead(mewtButton);
 
-if (mewtState == LOW) {
-  digitalWrite(LED_BUILTIN, HIGH);  
-  Serial.println("pressed");      
-  delay(50);
-}
-if (mewtState == HIGH) {
-  digitalWrite(LED_BUILTIN, LOW);  
-  Serial.println("released");      
-  delay(50);
-}
+  if (mewtState == LOW) {
+    digitalWrite(LED_BUILTIN, HIGH);  
+    Serial.println("pressed");      
+    delay(500);
+  }
+  if (mewtState == HIGH) {
+    digitalWrite(LED_BUILTIN, LOW);  
+    Serial.println("released");      
+    delay(500);
+  }
+  delay(500);
 }
