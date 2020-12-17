@@ -525,6 +525,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
 1. disconnect the **red LED** from **D4** and connect the **blue LED** to **D7**
 1. disconnect the **blue LED** and from **D7** connect the **green LED** to **D9**
 1. **Congratulations** you have successfully tested all the components you need to make a fully functional Mewt!  Go get a gummi worm this time!
+</details>
 
 </details>
 
