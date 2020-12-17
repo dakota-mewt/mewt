@@ -106,6 +106,9 @@ _Note: these are not referral links, I do not benefit from you clicking on these
  <summary>Click to expand</summary>
 
 ### 1. Plug in your Arduino and find its COM port
+<details>
+ <summary>Click to expand</summary>
+ 
 * Windows
   <details>
    <summary>Click to expand</summary>
@@ -149,6 +152,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
    1. jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
    </details>
+</details>
 
 ### 2. Download and install the Arduino IDE to test your Arduino
 <details>
@@ -245,7 +249,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 
 _Consider testing with jumper cables and a breadboard rather than directly soldering.  It is easier to identify faulty components or make changes this way._
   ![buttontestwiring](/images/buttontestwiring.png)
-* in the editor window paste in [this code](/tests/mewt-component-test.ino) 
+* in the editor window paste in [this code](/tests/mewt-button-test.ino) 
   
  <details>
   <summary>
@@ -254,97 +258,35 @@ _Consider testing with jumper cables and a breadboard rather than directly solde
    </summary>
 
    ```c
-   const int led0 = 0;     
-   const int led1 = 1;     
-   const int led3 = 3;     
-   const int led4 = 4;     
-   const int led5 = 5;     
-   const int led6 = 6;     
-   const int led7 = 7;     
-   const int led8 = 8;     
-   const int led9 = 9;     
-   const int led10 = 10;     
-   const int led11 = 11;     
-   const int led12 = 12; 
-   const int led13 = 13; 
-   const int led14 = 14;     
-   const int led15 = 15;     
-   const int led16 = 16;     
-   const int led17 = 17;     
-   const int led18 = 18;     
-   const int led19 = 19;     
-   const int led20 = 20;     
-   const int led21 = 21;     
+ const int mewtButton = 2;     
+      int mewtState = 0;
+      byte inByte;     
+      int inInt;
 
-   const int mewtButton = 2;     
-         int mewtState = 0;
-         byte inByte;     
-         int inInt;
+ void setup() {
+   Serial.begin(9600);
+   Serial.setTimeout(50);
+   // initialize digital pin LED_BUILTIN as an output.
+   pinMode(LED_BUILTIN, OUTPUT);
+   pinMode(mewtButton, INPUT_PULLUP);   
+ }
 
-   void setup() {
-     Serial.begin(9600);
-     Serial.setTimeout(50);
-     // initialize digital pin LED_BUILTIN as an output.
-     pinMode(LED_BUILTIN, OUTPUT);
-     pinMode(led0, OUTPUT);
-     pinMode(led1, OUTPUT);
-     pinMode(led3, OUTPUT);
-     pinMode(led4, OUTPUT);
-     pinMode(led5, OUTPUT);
-     pinMode(led6, OUTPUT);
-     pinMode(led7, OUTPUT);
-     pinMode(led8, OUTPUT);
-     pinMode(led9, OUTPUT);
-     pinMode(led10, OUTPUT);
-     pinMode(led11, OUTPUT);
-     pinMode(led12, OUTPUT);
-     pinMode(led13, OUTPUT);
-     pinMode(led14, OUTPUT);
-     pinMode(led15, OUTPUT);
-     pinMode(led16, OUTPUT);
-     pinMode(led17, OUTPUT);
-     pinMode(led18, OUTPUT);
-     pinMode(led19, OUTPUT);
-     pinMode(led20, OUTPUT);
-     pinMode(led21, OUTPUT);
-     pinMode(mewtButton, INPUT_PULLUP);   
+ // the loop function runs over and over again forever
+ void loop() {    
+   mewtState = digitalRead(mewtButton);
+
+   if (mewtState == LOW) {
+     digitalWrite(LED_BUILTIN, HIGH);  
+     Serial.println("pressed");      
+     delay(500);
    }
-
-   // the loop function runs over and over again forever
-   void loop() {    
-     digitalWrite(led0, HIGH);
-     digitalWrite(led1, HIGH);
-     digitalWrite(led3, HIGH);
-     digitalWrite(led4, HIGH);
-     digitalWrite(led5, HIGH);
-     digitalWrite(led6, HIGH);
-     digitalWrite(led7, HIGH);
-     digitalWrite(led9, HIGH);
-     digitalWrite(led10, HIGH);
-     digitalWrite(led11, HIGH);
-     digitalWrite(led12, HIGH);
-     digitalWrite(led13, HIGH);
-     digitalWrite(led14, HIGH);
-     digitalWrite(led15, HIGH);
-     digitalWrite(led16, HIGH);
-     digitalWrite(led17, HIGH);
-     digitalWrite(led18, HIGH);
-     digitalWrite(led19, HIGH);
-     digitalWrite(led20, HIGH);
-     digitalWrite(led21, HIGH);
-     mewtState = digitalRead(mewtButton);
-
-     if (mewtState == LOW) {
-       digitalWrite(LED_BUILTIN, HIGH);  
-       Serial.println("pressed");      
-       delay(50);
-     }
-     if (mewtState == HIGH) {
-       digitalWrite(LED_BUILTIN, LOW);  
-       Serial.println("released");      
-       delay(50);
-     }
+   if (mewtState == HIGH) {
+     digitalWrite(LED_BUILTIN, LOW);  
+     Serial.println("released");      
+     delay(500);
    }
+   delay(500);
+ }
    ```
  </details>   
 
@@ -378,8 +320,6 @@ It sets the Serial speed to be 9600, and a timeout of 50 (milliseconds).  The de
 
 We also initialize **LED_BUILTIN** (Arduino's built-in LED) and the MewtButton.  **INPUT_PULLUP** uses Arduino's built-in resistor so you can avoid having to physically wire in a resistor to make the button work.
 
-_ignore all the references to **led**, those are for later when we test the LEDs_
-
 Inside the infinite loop, we read the current state from **mewtButton**, which is reading from Arduino's #2 pin, and puts it into **mewtState** variable.  
 
 Then we check the value of the state.  If it is **LOW**, then that means that the button has been pressed.  We then output that state by turning on **LED_BUILTIN** and also write **pressed** on the serial port to be displayed by the computer.  That will happen as long as the button is pressed.
@@ -400,21 +340,192 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <summary>Click to expand</summary>
       
    * A Common (sometimes labeled **C**) - you will connect this to **GND** on your Arduino
-   * A Terminal for every color LED in your light - You will connect these to one of the **D** pins on your Arduino (for example: red -> D4)
+   * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
    ![ledtestwiring-commoncathode](/images/ledtestwiring-commoncathode.png)
-   </details>
+
+* in the editor window paste in [this code](/tests/mewt-ledcommoncathode-test.ino) 
+  
+ <details>
+  <summary>
+   
+   _See the code_
+   </summary>
+
+   ```c
+   const int led0 = 0;     
+   const int led1 = 1;     
+   const int led3 = 3;     
+   const int led4 = 4;     
+   const int led5 = 5;     
+   const int led6 = 6;     
+   const int led7 = 7;     
+   const int led8 = 8;     
+   const int led9 = 9;     
+   const int led10 = 10;     
+   const int led11 = 11;     
+   const int led12 = 12; 
+   const int led13 = 13; 
+
+   const int mewtButton = 2;     
+         int mewtState = 0;
+         byte inByte;     
+         int inInt;
+
+   void setup() {
+     Serial.begin(9600);
+     Serial.setTimeout(50);
+     // initialize digital pin LED_BUILTIN as an output.
+     pinMode(LED_BUILTIN, OUTPUT);
+     pinMode(led0, OUTPUT);
+     pinMode(led1, OUTPUT);
+     pinMode(led3, OUTPUT);
+     pinMode(led4, OUTPUT);
+     pinMode(led5, OUTPUT);
+     pinMode(led6, OUTPUT);
+     pinMode(led7, OUTPUT);
+     pinMode(led8, OUTPUT);
+     pinMode(led9, OUTPUT);
+     pinMode(led10, OUTPUT);
+     pinMode(led11, OUTPUT);
+     pinMode(led12, OUTPUT);
+     pinMode(led13, OUTPUT);
+     pinMode(mewtButton, INPUT_PULLUP);   
+    }
+
+   // the loop function runs over and over again forever
+   void loop() {    
+     digitalWrite(led0, HIGH);
+     digitalWrite(led1, HIGH);
+     digitalWrite(led3, HIGH);
+     digitalWrite(led4, HIGH);
+     digitalWrite(led5, HIGH);
+     digitalWrite(led6, HIGH);
+     digitalWrite(led7, HIGH);
+     digitalWrite(led9, HIGH);
+     digitalWrite(led10, HIGH);
+     digitalWrite(led11, HIGH);
+     digitalWrite(led12, HIGH);
+     digitalWrite(led13, HIGH);
+     mewtState = digitalRead(mewtButton);
+
+     if (mewtState == LOW) {
+       digitalWrite(LED_BUILTIN, HIGH);  
+       Serial.println("pressed");      
+       delay(50);
+     }
+     if (mewtState == HIGH) {
+       digitalWrite(LED_BUILTIN, LOW);  
+       Serial.println("released");      
+       delay(50);
+     }
+   }
+   ```
+ </details>   
+  </details>
+
 
 **If LED is Common Anode**
    <details>
    <summary>Click to expand</summary>
    
    * A Common (sometimes labeled **C**) - you will connect this to **VCC** or **5V** on your Arduino
-   * A Terminal for every color LED in your light - You will connect these to one of the **D** pins on your Arduino (for example: red -> D4)
+   * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
    ![ledtestwiring-commonannode](/images/ledtestwiring-commonannode.png)
+   
+* in the editor window paste in [this code](/tests/mewt-ledcommonanode-test.ino) 
+  
+ <details>
+  <summary>
+   
+   _See the code_
+   </summary>
+
+   ```c
+   const int led0 = 0;     
+   const int led1 = 1;     
+   const int led3 = 3;     
+   const int led4 = 4;     
+   const int led5 = 5;     
+   const int led6 = 6;     
+   const int led7 = 7;     
+   const int led8 = 8;     
+   const int led9 = 9;     
+   const int led10 = 10;     
+   const int led11 = 11;     
+   const int led12 = 12; 
+   const int led13 = 13; 
+
+   const int mewtButton = 2;     
+         int mewtState = 0;
+         byte inByte;     
+         int inInt;
+
+   void setup() {
+     Serial.begin(9600);
+     Serial.setTimeout(50);
+     // initialize digital pin LED_BUILTIN as an output.
+     pinMode(LED_BUILTIN, OUTPUT);
+     pinMode(led0, OUTPUT);
+     pinMode(led1, OUTPUT);
+     pinMode(led3, OUTPUT);
+     pinMode(led4, OUTPUT);
+     pinMode(led5, OUTPUT);
+     pinMode(led6, OUTPUT);
+     pinMode(led7, OUTPUT);
+     pinMode(led8, OUTPUT);
+     pinMode(led9, OUTPUT);
+     pinMode(led10, OUTPUT);
+     pinMode(led11, OUTPUT);
+     pinMode(led12, OUTPUT);
+     pinMode(led13, OUTPUT);
+     pinMode(mewtButton, INPUT_PULLUP);   
+    }
+
+   // the loop function runs over and over again forever
+   void loop() {    
+     digitalWrite(led0, LOW);
+     digitalWrite(led1, LOW);
+     digitalWrite(led3, LOW);
+     digitalWrite(led4, LOW);
+     digitalWrite(led5, LOW);
+     digitalWrite(led6, LOW);
+     digitalWrite(led7, LOW);
+     digitalWrite(led9, LOW);
+     digitalWrite(led10, LOW);
+     digitalWrite(led11, LOW);
+     digitalWrite(led12, LOW);
+     digitalWrite(led13, LOW);
+     mewtState = digitalRead(mewtButton);
+
+     if (mewtState == LOW) {
+       digitalWrite(LED_BUILTIN, HIGH);  
+       Serial.println("pressed");      
+       delay(50);
+     }
+     if (mewtState == HIGH) {
+       digitalWrite(LED_BUILTIN, LOW);  
+       Serial.println("released");      
+       delay(50);
+     }
+   }
+   ```
+
    </details>
 
-* if your Arduino is already running the program to test your button from above, then you should see your LED 
-LED
+1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+![verifycompile](/images/screenshots/arduino/verifycompile.png)
+1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+![donecompiling](/images/screenshots/arduino/donecompiling.png)
+1. select **_Sketch->Upload_**.
+![upload](/images/screenshots/arduino/upload.png)
+1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+![doneuploading](/images/screenshots/arduino/doneuploading.png)
+1. if all goes well, your LED will have lit up.
+1. **Congratulations** you're a pro at this point!  Go get a third gummi bear!
+1. disconnect the **red LED** from **D4** and connect the **blue LED** to **D7**
+1. disconnect the **blue LED** and from **D7** connect the **green LED** to **D9**
+1. **Congratulations** you have successfully tested all the components you need to make a fully functional Mewt!  Go get a gummi worm this time!
+
 </details>
 
 </details>
