@@ -254,7 +254,7 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 
 _Consider testing with jumper cables and a breadboard rather than directly soldering.  It is easier to identify faulty components or make changes this way._
   ![buttontestwiring](/images/buttontestwiring.png)
-* in the editor window paste in [this code](/tests/mewt-button-test.ino) 
+* in the editor window paste in [this code](/code/arduino/tests/mewt-button-test.ino) 
   
  <details>
   <summary>
@@ -348,7 +348,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
    ![ledtestwiring-commoncathode](/images/ledtestwiring-commoncathode.png)
 
-* in the editor window paste in [this code](/tests/mewt-ledcommoncathode-test.ino) 
+* in the editor window paste in [this code](/code/arduino/tests/mewt-ledcommoncathode-test.ino) 
   
  <details>
   <summary>
@@ -435,9 +435,9 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    
    * A Common (sometimes labeled **C** or **+**) - you will connect this to **5V** on your Arduino
    * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
-   ![ledtestwiring-commonannode](/images/ledtestwiring-commonannode.png)
+   ![ledtestwiring-commonannode](/images/ledtestwiring-commonanode.png)
    
-* in the editor window paste in [this code](/tests/mewt-ledcommonanode-test.ino) 
+* in the editor window paste in [this code](/code/arduino/tests/mewt-ledcommonanode-test.ino) 
   
  <details>
   <summary>
@@ -544,14 +544,14 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <summary>Click to expand</summary>
 
 
-   ![ledtestwiring-commonannode-resistor](/images/ledtestwiring-commoncathode-resistor.png)
+   ![ledtestwiring-commonanode-resistor](/images/ledtestwiring-commoncathode-resistor.png)
    </details>
    
-**Common Annode**
+**Common Anode**
    <details>
    <summary>Click to expand</summary>
  
-   ![ledtestwiring-commonannode-resistor](/images/ledtestwiring-commonannode-resistor.png)
+   ![ledtestwiring-commonanode-resistor](/images/ledtestwiring-commonanode-resistor.png)
    </details>
    
    </details>
@@ -575,9 +575,64 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 
   _ | Common Cathode LED | Common Anode LED 
   :------------: | :-------------: | :-------------: 
-  Deluxe (no additional resistors)| ![mewtwiring-commoncathode](/images/mewtwiring-commoncathode.png) | ![mewtwiring-commonannode](/images/mewtwiring-commonannode.png) 
-  Basic (with resistors)  | ![mewtbasicwiring-commoncathode](/images/mewtbasicwiring-commoncathode.png) | ![mewtbasicwiring-commonannode](/images/mewtbasicwiring-commonannode.png) 
+  Deluxe (no additional resistors)| ![mewtwiring-commoncathode](/images/mewtwiring-commoncathode.png) | ![mewtwiring-commonanode](/images/mewtwiring-commonanode.png) 
+  Basic (with resistors)  | ![mewtbasicwiring-commoncathode](/images/mewtbasicwiring-commoncathode.png) | ![mewtbasicwiring-commonanode](/images/mewtbasicwiring-commonanode.png) 
   
+</details>
+
+## Test your assembled Mewt 
+<details>
+ <summary>Click to expand</summary>
+ 
+  _ | Common Cathode LED | Common Anode LED 
+  :------------: | :-------------: | :-------------: 
+  Momentary Button| [momentary_common_cathode.ino](/code/arduino/momentary_common_cathode.ino) | [momentary_common_anode.ino](/code/arduino/momentary_common_anode.ino) 
+  Latching Button  | [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino) | [latch_rgb_common_anode.ino](/code/arduino/latch_rgb_common_anode.ino) 
+
+<details>
+ <summary>
+  
+   _Curious as to how these programs differ?_
+   </summary>
+
+* A **Common Cathode** LED shares a connection to Arduino's GND (-).  Arduino sets the state based on changing the voltage applied to the pin.  When you want to turn on an LED light, the code instructs Arduino to send a value of **HIGH**
+
+* A **Common Anode** LED shares a connection to Arduino's 5V (+).  When you want to turn on an LED light, the code instructs Arduino to send a value of **LOW**
+
+* A **Latching Button** stays locked to an on state or an off state depending on if you've pressed or released the button.  Arduino can simply read the current state to figure out if you intend Mewt to be enabled or not.
+
+* A **Momentary Button** resets itself when you release the button.  Because of this lack of memory (or state), Arduino cannot rely on the status of the button to tell if Mewt should be enabled or not.  Instead, Arduino needs to keep track of the state inside the code with the use of a variable.
+</details>
+
+1. Load the program applicable to your components into your Arduino IDE editor 
+1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+![verifycompile](/images/screenshots/arduino/verifycompile.png)
+1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+![donecompiling](/images/screenshots/arduino/donecompiling.png)
+1. select **_Sketch->Upload_**.
+![upload](/images/screenshots/arduino/upload.png)
+1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+![doneuploading](/images/screenshots/arduino/doneuploading.png)
+1. select **_Tools->Serial Monitor_** 
+![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
+1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
+![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
+1. if all goes well you should have the below reults
+* when you press the button you should see the **Green LED** come on and the Arduino IDE window output should display either **1** or **0**.  Every time you press the button again, the value you see will toggle back and forth
+* when you type **0** into the textbox and click **Send**, your button should light up with the **Red LED** for about a second and then shut off.  
+
+![testmewtbuttonpress](/images/testmewtbuttonpress.gif)
+
+  Type this into Arduino text box | This should light up
+  :------------: | :-------------: 
+  **0** | Red [momentary_common_cathode.ino](/code/arduino/momentary_common_cathode.ino) 
+  **1**  | Blue [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+  **2**  | Green [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+  **3**  | Purple (Green + Blue) [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+  **4**  | Yellow (Red + Green) [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+  **5**  | White (Red + Blue + Green) [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+  **101**  | Flash Green 3x [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+    
 </details>
 
 # How you can support Mewt
