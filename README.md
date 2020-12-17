@@ -56,9 +56,9 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   **Other Examples**: 
 
   _ |Latch | Momentary | Switch 
-  ------------- | ------------- | ------------- | -------------
-  Basic | $3![basiclatching](/images/basiclatching.png)](https://www.amazon.com/dp/B07WGNSRXR) | $3![basicmomentary](/images/basicmomentary.png)](https://www.amazon.com/dp/B07VSFLTMJ) | $3![basictoggleswitch](/images/basictoggleswitch.png)](https://www.amazon.com/dp/B07SXRKY6C/) 
-  Deluxe | $8![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18![deluxemomentary](/images/deluxemomentary.png)](https://www.ebay.com/itm/333311892227) | $10![deluxetoggleswitch](/images/deluxetoggleswitch.png)](https://www.amazon.com/gp/product/B008DG7NWQ) 
+  :-------------: | :-------------: | :-------------: | :-------------:
+  Basic | $3![basiclatching](/images/basiclatching.png)(https://www.amazon.com/dp/B07WGNSRXR) | $3![basicmomentary](/images/basicmomentary.png)(https://www.amazon.com/dp/B07VSFLTMJ) | $3![basictoggleswitch](/images/basictoggleswitch.png)(https://www.amazon.com/dp/B07SXRKY6C/) 
+  Deluxe | $8![deluxelatching](/images/deluxelatching.png)](https://www.amazon.com/gp/product/B07KQ3P2Y2) | $18![deluxemomentary](/images/deluxemomentary.png)(https://www.ebay.com/itm/333311892227) | $10![deluxetoggleswitch](/images/deluxetoggleswitch.png)(https://www.amazon.com/gp/product/B008DG7NWQ) 
   </details>
 
 ### 2. Get an Arduino microcontroller (~$10)
@@ -553,6 +553,13 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    </details>
 
 </details>
+</details>
+
+## Assemble your Mewt 
+<details>
+ <summary>Click to expand</summary>
+
+assemble
 </details>
 
 # How you can support Mewt
