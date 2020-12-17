@@ -528,8 +528,30 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
 
   </details>
 
-</details>
+**If you have an LED separate from your button (i.e. if you are building a Mewt Basic)**
+   <details>
+   <summary>Click to expand</summary>
+     You will also need to add an inline resistor with every color terminal.
+   Follow the above directions, but use this wiring instead:
 
+**Common cathode**
+   <details>
+   <summary>Click to expand</summary>
+
+
+   ![ledtestwiring-commonannode-resistor](/images/ledtestwiring-commoncathode-resistor.png)
+   </details>
+   
+**Common Annode**
+   <details>
+   <summary>Click to expand</summary>
+ 
+   ![ledtestwiring-commonannode-resistor](/images/ledtestwiring-commonannode-resistor.png)
+   </details>
+   
+   </details>
+
+</details>
 </details>
 
 # How you can support Mewt
