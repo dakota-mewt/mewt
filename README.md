@@ -392,6 +392,34 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
 
 
 
+### 4. Test your LED 
+<details>
+ <summary>Click to expand</summary>
+
+* **Common Cathode vs Common Anode**: Here's a [link that explains](https://forum.arduino.cc/index.php?topic=22413.0) it.
+
+**If LED is Common Cathode**
+   <details>
+   <summary>Click to expand</summary>
+      
+   * A Common (sometimes labeled **C**) - you will connect this to **GND** on your Arduino
+   * A Terminal for every color LED in your light - You will connect these to one of the **D** pins on your Arduino (for example: red -> D4)
+   ![ledtestwiring-commoncathode](/images/ledtestwiring-commoncathode.png)
+   </details>
+
+**If LED is Common Anode**
+   <details>
+   <summary>Click to expand</summary>
+   
+   * A Common (sometimes labeled **C**) - you will connect this to **VCC** or **5V** on your Arduino
+   * A Terminal for every color LED in your light - You will connect these to one of the **D** pins on your Arduino (for example: red -> D4)
+   ![ledtestwiring-commonannode](/images/ledtestwiring-commonannode.png)
+   </details>
+
+* if your Arduino is already running the program to test your button from above, then you should see your LED 
+LED
+</details>
+
 # How you can support Mewt
 <details>
  <summary>Click to expand</summary>
