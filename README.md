@@ -1,5 +1,5 @@
 # Mewt
-Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single click in Windows, Mac and Linux**.  
+Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single press for Windows, Mac and Linux**.  
 
 Mewt works at the operating system (OS) level, so this **will mute/unmute all conferencing software** (Zoom, Google Meet, Teams, WebEx, Blue Jeans, GoToMeeting, Skype, Slack, Facebook, Discord, etc.)
 
