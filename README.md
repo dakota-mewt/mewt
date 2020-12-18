@@ -635,6 +635,44 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 * **Congratulations** you have a fully functional Mewt!  Upgrade your gummi worm to a sour gummi worm!
 </details>
 
+## Connect your computer to your Mewt
+<details>
+ <summary>Click to expand</summary>
+ 
+* Windows
+  <details>
+   <summary>Click to expand</summary>
+   
+   1. click Start 
+   ![clickstart](/images/screenshots/windows/clickstart.png)
+   1. type in **_file explorer_** to search and open 
+   1. navigate to your **(C:)** drive, right click on your _**(C:)->New->Folder**_ and make a folder named _**mewt**_
+   ![newfolder](/images/screenshots/windows/newfolder.png)
+   1. save these 2 files to your new _**c:\mewt**_ folder
+   * [AudioDeviceCmdlets.dll](/code/windows/AudioDeviceCmdlets.dll)*
+   * [mewt.ps1](/code/windows/mewt.ps1)
+   * *_thanks to @frgnca, @cdhunt, @netdev from.  You can find their github page at [https://github.com/frgnca/AudioDeviceCmdlets](https://github.com/frgnca/AudioDeviceCmdlets)_
+   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+   1. the **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
+   _windows_
+   </details>
+
+* Mac
+  <details>
+   <summary>Click to expand</summary>
+   
+   **mac**
+   </details>
+ 
+
+* Linux
+  <details>
+   <summary>Click to expand</summary>
+   
+   linux
+   </details>
+</details>
+
 # How you can support Mewt
 <details>
  <summary>Click to expand</summary>
