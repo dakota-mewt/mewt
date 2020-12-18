@@ -9,7 +9,7 @@ If your microphone is broadcasting, Mewt will also help you **avoid embarassing 
 
 Muted | Unmuted | Hot Mic
 ------------ | ------------- | -------------
-![mewt](/images/mewt/mewted.png) | ![unmewt](/images/mewt/unmewted.png) | ![Hot Mic](/images/mewt/hotmic.gif)
+![mewt](/images/mewt/red.jpg) | ![unmewt](/images/mewt/blue.jpg) | ![Hot Mic](/images/mewt/hotmic.gif)
 
 # How it works
 <details>
