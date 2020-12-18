@@ -619,19 +619,18 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
 1. if all goes well you should have the below reults
 * when you press the button you should see the **Green LED** come on and the Arduino IDE window output should display either **1** or **0**.  Every time you press the button again, the value you see will toggle back and forth
-* when you type **0** into the textbox and click **Send**, your button should light up with the **Red LED** for about a second and then shut off.  
 
-![testmewtbuttonpress](/images/testmewtbuttonpress.gif)
+![testmewtbuttonpress](/images/mewt/testmewtbuttonpress.gif)
 
   Type this into Arduino text box | This should light up
   :------------: | :-------------: 
-  **0** | Red ![red](/images/red.jpg) 
-  **1**  | Blue ![blue](/images/blue.jpg) 
-  **2**  | Green ![green](/images/green.jpg) 
-  **3**  | Purple ![purple](/images/purple.jpg) 
-  **4**  | Yellow ![yellow](/images/yellow.jpg) 
-  **5**  | White ![white](/images/white.jpg) 
-  **101**  | Flash Green 3x [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino)
+  **0** | Red ![red](/images/mewt/red.jpg) 
+  **1**  | Blue ![blue](/images/mewt/blue.jpg) 
+  **2**  | Green ![green](/images/mewt/green.jpg) 
+  **3**  | Purple ![purple](/images/mewt/purple.jpg) 
+  **4**  | Yellow ![yellow](/images/mewt/yellow.jpg) 
+  **5**  | White ![white](/images/mewt/white.jpg) 
+  **101**  | Flash Green 3x ![greenblink3x](/images/mewt/greenblink3x.gif)
     
 </details>
 
