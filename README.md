@@ -631,7 +631,8 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   **4**  | Yellow ![yellow](/images/mewt/yellow.jpg) 
   **5**  | White ![white](/images/mewt/white.jpg) 
   **101**  | Flash Green 3x ![greenblink3x](/images/mewt/greenblink3x.gif)
-    
+  
+* **Congratulations** you have a fully functional Mewt!  Upgrade your gummi worm to a sour gummi worm!
 </details>
 
 # How you can support Mewt
