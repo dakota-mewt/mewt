@@ -15,9 +15,14 @@ if (!(Test-Path "$($profile | split-path)\Modules\AudioDeviceCmdlets")) {
 
 cd $install_path
 New-Item $mewt_path -Type directory -Force
-Copy-Item ".\mewt.ps1" $mewt_path 
-Copy-Item ".\setup_mewt.ps1" $mewt_path 
 Copy-Item ".\AudioDeviceCmdlets.dll" $mewt_path
+Copy-Item ".\mewt.ps1" $mewt_path 
+Copy-Item ".\start_mewt.bat" $mewt_path
+Copy-Item ".\setup_mewt.ps1" $mewt_path 
+Copy-Item ".\start_mewt.bat" $mewt_path
+Copy-Item ".\start_mewt_verbose.bat" $mewt_path
+
+
 
 cd $mewt_path
 
