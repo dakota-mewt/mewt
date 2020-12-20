@@ -643,18 +643,20 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   <details>
    <summary>Click to expand</summary>
    
-   1. click Start 
-   ![clickstart](/images/screenshots/windows/clickstart.png)
-   1. type in **_file explorer_** to search and open 
-   1. navigate to your **(C:)** drive, right click on your _**(C:)->New->Folder**_ and make a folder named _**mewt**_
-   ![newfolder](/images/screenshots/windows/newfolder.png)
-   1. save these 2 files to your new _**c:\mewt**_ folder
-   * [AudioDeviceCmdlets.dll](/code/windows/AudioDeviceCmdlets.dll)*
-   * [mewt.ps1](/code/windows/mewt.ps1)
-   * *_thanks to @frgnca, @cdhunt, @netdev from.  You can find their github page at [https://github.com/frgnca/AudioDeviceCmdlets](https://github.com/frgnca/AudioDeviceCmdlets)_
-   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. the **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
-   _windows_
+   1. Download [mewt.exe](/code/windows/mewt.exe)
+   _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading.
+   ![keepanyway](/images/screenshots/windows/keepanyway.png)
+   1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
+   1. Find where you downloaded **mewt.exe** and run the file.
+   1. Windows Defender / User Access Control may ask several times if you want to continue, follow screenshots to continue.
+   ![windowsdefender](/images/screenshots/windows/windowsdefender.png)![runanyway](/images/screenshots/windows/runanyway.png)![unknownpublisher](/images/screenshots/windows/unknownpublisher.png)
+   1. You will then see Mewt install itself
+   ![installingmewt](/images/screenshots/windows/installingmewt.png)
+   1. Finally, you will see a prompt to plug Mewt into a USB port
+   ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a brief delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Depending on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on.  
+   ![mewtfirsttime](/images/mewtfirsttime.png)
+   
    </details>
 
 * Mac
