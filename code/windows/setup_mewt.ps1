@@ -43,7 +43,8 @@ Add-Type -AssemblyName System.Windows.Forms
 $Form = New-Object system.Windows.Forms.Form
 $Label = New-Object System.Windows.Forms.Label
 $Form.Controls.Add($Label)
-$Label.Text = "Here are your current Serial ports: `n" + $COMportList + "`n`nPlease plug MEWT into a USB port"
+#$Label.Text = "Here are your current Serial ports: `n" + $COMportList + "`n`nPlease plug MEWT into a USB port"
+$Label.Text = "Please plug MEWT into a USB port"
 $Label.AutoSize = $True
 $Form.Visible = $True
 $Form.Update()
@@ -85,3 +86,5 @@ $mewtserialportlistcount = $mewtserialportlist.count
 $form.close()
 
 & .\mewt.ps1
+# $process = start-Process -FilePath  powershell.exe -windowstyle hidden -file .\mewt.ps1
+
