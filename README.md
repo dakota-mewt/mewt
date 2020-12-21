@@ -7,6 +7,8 @@ Mewt will **continuously display the current Mute/Unmute state** so you can tell
 
 When Mewt detects that your microphone is transmitting audio, it will display a sound visualizer to help you **avoid embarassing hot-mic incidents via RGB LED light indicator**. _currently works in Windows, but not Mac or Linux_
 
+![mewtdemo](/images/mewtdemo.gif)
+
 Muted | Unmuted | Hot Mic
 ------------ | ------------- | -------------
 ![mewt](/images/mewt/red.jpg) | ![unmewt](/images/mewt/blue.jpg) | ![Hot Mic](/images/mewt/hotmic.gif)
@@ -21,9 +23,9 @@ Mewt is made up of 2 parts:
    1. A physical button to control mute state, with a built-in RGB LED to display mute state / hot-mic
    1. An Arduino microcontroller to interface with the button and the LED. This is also what will communicate with your computer
 1. Code running on your computer to 
-   1. recognize button presses to toggle microphone mute/unmute
-   1. read microphone mute/unmute state and send information to the physical components to display status
-   1. read microphone volume levels and send information to the physical components to display hot-mic
+   1. Recognize button presses to toggle microphone mute/unmute
+   1. Read microphone mute/unmute state and send information to the physical components to display status
+   1. Read microphone volume levels and send information to the physical components to display hot-mic
 ![mewtdesign](/images/mewtdesign.png)
 
 </details>
@@ -118,16 +120,16 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
   <details>
    <summary>Click to expand</summary>
  
-   1. click Start 
+   1. Click Start 
    ![clickstart](/images/screenshots/windows/clickstart.png)
-   1. type in **_device manager_** to search and open 
+   1. Type in **_device manager_** to search and open 
    ![devicemanager](/images/screenshots/windows/devicemanager.png)
-   1. scroll down to **_ports_** and expand it.  _Note: you may not see a Ports listing until after the next step, don't panic._
-   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. the **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
-   1. you should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 
+   1. Scroll down to **_ports_** and expand it.  _Note: you may not see a Ports listing until after the next step, don't panic._
+   1. Now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+   1. The **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
+   1. You should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 
    ![ports](/images/screenshots/windows/ports.png)
-   1. jot down the COMx serial port somewhere, we'll need to reference it later
+   1. Jot down the COMx serial port somewhere, we'll need to reference it later
    * _If you do not see your Arduino here, or if you see a question mark icon, we will need to [Troubleshoot](#Troubleshooting)_
    </details>
 
@@ -135,14 +137,14 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
   <details>
    <summary>Click to expand</summary>
    
-   1. click **_Finder->Applications->Utilities->Terminal_** 
+   1. Click **_Finder->Applications->Utilities->Terminal_** 
    ![terminal](/images/screenshots/mac/terminal.png)
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
+   1. In the Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
    ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
-   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
+   1. Now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+   1. In the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
    ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
-   1. jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
+   1. Jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
    </details>
  
 
@@ -150,12 +152,12 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
   <details>
    <summary>Click to expand</summary>
    
-   1. in a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
+   1. In a Terminal window, type in **_ls /dev/tty.*_** and hit enter. Make a mental note of the results.  
    ![portsbeforearduino](/images/screenshots/mac/portsbeforearduino.png)
-   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. in the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
+   1. Now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
+   1. In the Terminal window, type in **_ls /dev/tty.*_** and hit enter (again). 
    ![portsafterarduino](/images/screenshots/mac/portsafterarduino.png)
-   1. jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
+   1. Jot down the new entry **_/dev/tty.XXXXXXXX_** serial port somewhere, we'll need to reference it later
    </details>
 </details>
 
@@ -163,14 +165,14 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 <details>
  <summary>Click to expand</summary>
 
-1. go to [The Arduino Download Page](https://www.arduino.cc/en/software) to download the latest IDE for your OS
-1. install and launch the IDE
-1. select **_File->New_** and delete everything in the new window that opens up
-1. select **_Tools->Board_** and choose your Arduino model.  _for Pro Micros, choose Arduino Leonardo_ 
+1. Go to [The Arduino Download Page](https://www.arduino.cc/en/software) to download the latest IDE for your OS
+1. Install and launch the IDE
+1. Select **_File->New_** and delete everything in the new window that opens up
+1. Select **_Tools->Board_** and choose your Arduino model.  _for Pro Micros, choose Arduino Leonardo_ 
 ![boards](/images/screenshots/arduino/boards.png)
-1. select **_Tools->Ports_** and choose the same serial port that you jotted down earlier 
+1. Select **_Tools->Ports_** and choose the same serial port that you jotted down earlier 
 ![portselection](/images/screenshots/arduino/portselection.png)
-1. in the editor window paste in this code borrowed from **Abdullah Al Mamun** from [Instructables.com](https://www.instructables.com/Arduino-Function-Serialread-And-SerialreadString/) 
+1. In the editor window paste in this code borrowed from **Abdullah Al Mamun** from [Instructables.com](https://www.instructables.com/Arduino-Function-Serialread-And-SerialreadString/) 
  ```c
  String a;
  void setup() {
@@ -185,22 +187,22 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
  }
 ```
 
-1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+1. Select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
 ![verifycompile](/images/screenshots/arduino/verifycompile.png)
-1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+1. You should see a green **Done Compiling** status at the bottom of your Arduino window 
 ![donecompiling](/images/screenshots/arduino/donecompiling.png)
-1. select **_Sketch->Upload_**.
+1. Select **_Sketch->Upload_**.
 ![upload](/images/screenshots/arduino/upload.png)
-1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+1. You should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
 ![doneuploading](/images/screenshots/arduino/doneuploading.png)
-1. if you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  
+1. If you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  
 ![processorbootloader](/images/screenshots/arduino/processorbootloader.png)
-1. select **_Tools->Serial Monitor_** 
+1. Select **_Tools->Serial Monitor_** 
 ![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
-1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
+1. Make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
 ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
-1. in the text box, type in **_Hello World_** and click **_Send_**
-1. if all goes well, you should see the same words show up below the text box next to a timestamp 
+1. In the text box, type in **_Hello World_** and click **_Send_**
+1. If all goes well, you should see the same words show up below the text box next to a timestamp 
 ![helloworld](/images/screenshots/arduino/helloworld.png)
 1. **Congratulations** if this is your first Arduino program!  Go get a gummi bear and shove it in your face!
  <details>
@@ -295,23 +297,23 @@ _Consider testing with jumper cables and a breadboard rather than directly solde
    ```
  </details>   
 
-1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+1. Select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
 ![verifycompile](/images/screenshots/arduino/verifycompile.png)
-1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+1. You should see a green **Done Compiling** status at the bottom of your Arduino window 
 ![donecompiling](/images/screenshots/arduino/donecompiling.png)
-1. select **_Sketch->Upload_**.  
+1. Select **_Sketch->Upload_**.  
 ![upload](/images/screenshots/arduino/upload.png)
-1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+1. You should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
 ![doneuploading](/images/screenshots/arduino/doneuploading.png)
-1. if you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  
+1. If you get an error while uploading, some Arduino models require you to select your Bootloader.  To do that, select **_Tools->Processor->(Old Bootloader)_** and try uploading again.  
 ![processorbootloader](/images/screenshots/arduino/processorbootloader.png)
-1. select **_Tools->Serial Monitor_** 
+1. Select **_Tools->Serial Monitor_** 
 ![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
-1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
+1. Make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
 ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
-1. if all goes well, you should see the word **pressed** in the output window every time you press the button.  It should display **released** when you let go of the button.
+1. If all goes well, you should see the word **pressed** in the output window every time you press the button.  It should display **released** when you let go of the button.
 ![buttontest](/images/screenshots/arduino/buttontest.png)
-1. if you get the opposite result of what you are looking for (output says **pressed** when you release the button and it says **released** when you press the button), simply swap the wires connecting to the button terminals
+1. If you get the opposite result of what you are looking for (output says **pressed** when you release the button and it says **released** when you press the button), simply swap the wires connecting to the button terminals
 1. **Congratulations** if this is your first time connecting a piece of physical hardware to your code!  Go get another gummi bear and shove it in your face! 
 
  <details>
@@ -517,18 +519,18 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
 
    </details>
 
-1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+1. Select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
 ![verifycompile](/images/screenshots/arduino/verifycompile.png)
-1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+1. You should see a green **Done Compiling** status at the bottom of your Arduino window 
 ![donecompiling](/images/screenshots/arduino/donecompiling.png)
-1. select **_Sketch->Upload_**.
+1. Select **_Sketch->Upload_**.
 ![upload](/images/screenshots/arduino/upload.png)
-1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+1. You should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
 ![doneuploading](/images/screenshots/arduino/doneuploading.png)
-1. if all goes well, your LED will have lit up.
+1. If all goes well, your LED will have lit up.
 1. **Congratulations** you're a pro at this point!  Go get a third gummi bear!
-1. disconnect the **red LED** from **D4** and connect the **blue LED** to **D7**
-1. disconnect the **blue LED** and from **D7** connect the **green LED** to **D9**
+1. Disconnect the **red LED** from **D4** and connect the **blue LED** to **D7**
+1. Disconnect the **blue LED** and from **D7** connect the **green LED** to **D9**
 1. **Congratulations** you have successfully tested all the components you need to make a fully functional Mewt!  Go get a gummi worm this time!
 
   </details>
@@ -605,19 +607,19 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 </details>
 
 1. Load the program applicable to your components into your Arduino IDE editor 
-1. select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
+1. Select **_Sketch->Verify/Compile_**.  You can click **_Save_** when it prompts you to save the sketch folder.  
 ![verifycompile](/images/screenshots/arduino/verifycompile.png)
-1. you should see a green **Done Compiling** status at the bottom of your Arduino window 
+1. You should see a green **Done Compiling** status at the bottom of your Arduino window 
 ![donecompiling](/images/screenshots/arduino/donecompiling.png)
-1. select **_Sketch->Upload_**.
+1. Select **_Sketch->Upload_**.
 ![upload](/images/screenshots/arduino/upload.png)
-1. you should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
+1. You should see the status change to **Uploading**, the lights on the Arduino should blink, followed by a green **Done Uploading** status at the bottom of your Arduino window. 
 ![doneuploading](/images/screenshots/arduino/doneuploading.png)
-1. select **_Tools->Serial Monitor_** 
+1. Select **_Tools->Serial Monitor_** 
 ![serialmonitor](/images/screenshots/arduino/serialmonitor.png)
-1. make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
+1. Make sure the 2 selections on the lower right hand of the screen are: **Both NL & CR** and **9600 baud** 
 ![serialmonitorparameter](/images/screenshots/arduino/serialmonitorparameter.png)
-1. if all goes well you should have the below reults
+1. If all goes well you should have the below reults
 * when you press the button you should see the **Green LED** come on and the Arduino IDE window output should display either **1** or **0**.  Every time you press the button again, the value you see will toggle back and forth
 
 ![testmewtbuttonpress](/images/mewt/testmewtbuttonpress.gif)
@@ -643,20 +645,32 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   <details>
    <summary>Click to expand</summary>
    
-   1. click Start 
-   ![clickstart](/images/screenshots/windows/clickstart.png)
-   1. type in **_file explorer_** to search and open 
-   1. navigate to your **(C:)** drive, right click on your _**(C:)->New->Folder**_ and make a folder named _**mewt**_
-   ![newfolder](/images/screenshots/windows/newfolder.png)
-   1. save these 2 files to your new _**c:\mewt**_ folder
-   * [AudioDeviceCmdlets.dll](/code/windows/AudioDeviceCmdlets.dll)*
-   * [mewt.ps1](/code/windows/mewt.ps1)
-   * *_thanks to @frgnca, @cdhunt, @netdev from.  You can find their github page at [https://github.com/frgnca/AudioDeviceCmdlets](https://github.com/frgnca/AudioDeviceCmdlets)_
-   1. now plug your Arduino into your computer's USB port.  Depending on your Arduino model, you may see some lights blink on your Arduino at this point.
-   1. the **_Device Manager_** window may refresh at this point.  scroll down to **_ports_**, and expand it (again).
-   _windows_
-   </details>
+   1. Download [mewt.exe](/code/windows/mewt.exe)   
+   _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
+   ![keepanyway](/images/screenshots/windows/keepanyway.png)
+   1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
+   1. Find where you downloaded **mewt.exe** and run the file.
+   1. Windows Defender / User Access Control may ask several times if you want to continue, follow screenshots to continue.
+   ![windowsdefender](/images/screenshots/windows/windowsdefender.png)![runanyway](/images/screenshots/windows/runanyway.png)![unknownpublisher](/images/screenshots/windows/unknownpublisher.png)
+   1. You will then see Mewt install itself
+   ![installingmewt](/images/screenshots/windows/installingmewt.png)
+   1. Finally, you will see a prompt to plug Mewt into a USB port
+   ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
+   ![mewtfirsttime](/images/mewtfirsttime.gif)
+   1. The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn every microphone in your system from Unmuted to Muted, and vice versa.  Below are what the colors represent:
 
+   Color | Represents
+  :------------: | :-------------: 
+  **0** | Muted ![red](/images/mewt/red.jpg) 
+  **1**  | Unmuted, but not transmitting ![blue](/images/mewt/blue.jpg) 
+  **2**  | Button pressed ![green](/images/mewt/green.jpg) 
+  **3**  | Hot-mic display ![purple](/images/mewt/purple.jpg) 
+  **4**  | Hot-mic display  ![yellow](/images/mewt/yellow.jpg) 
+  **5**  | Hot-mic display  ![white](/images/mewt/white.jpg) 
+  **101**  | Microphone devices have changed ![greenblink3x](/images/mewt/greenblink3x.gif)
+   1. To test out Mewt, go to [online-voice-recorder.com](https://online-voice-recorder.com/), and click on the red button to record.  You should see it react to any sounds your microphone picks up.  
+   ![onlinevoicerecorder](/images/onlinevoicerecorder.gif)   
 * Mac
   <details>
    <summary>Click to expand</summary>
@@ -691,4 +705,5 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  
  If you can report back via this 5 second [#UnMewtForGood questionnaire](https://www.surveymonkey.com/r/DFHGL6H), it would really make my day.  I'm hoping we can push out $1000 and/or 100 hours of kindness from this little corner of the internet.
  </details>
+
 
