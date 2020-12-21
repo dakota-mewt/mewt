@@ -708,7 +708,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
    1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
    ![mewtfirsttime](/images/mewtfirsttime.gif)
-   1. The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn every microphone in your system from Unmuted to Muted, and vice versa.  Below are what the colors represent:
+   1. The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn every microphone in your system from Unmuted to Muted, and vice versa.
    
    
    
@@ -718,10 +718,20 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 * Mac
   <details>
    <summary>Click to expand</summary>
-   
-   **mac**
-   </details>
  
+   1. Download [mewt.zip](/code/mac/mewt.zip)   
+   _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
+   ![keepanyway](/images/screenshots/windows/keepanyway.png)
+   1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
+   1. Navigate to where you saved **mewt.zip** from ***Finder->Downloads***, right click on it and select _**Open With->Archive Utility**_
+   ![extractall](/images/screenshots/mac/archiveutility.png)
+   1. Open ***Terminal*** from ***Finder->Applications->Utilities->Terminal***
+   1. In the Terminal console, navigate to where you unzipped **mewt.zip** _typically this is **cd $HOME/Downloads/mewt**_
+   1. Type in ***python mac_install_mewt.py***, wait for the prompt to plug in your Mewt
+   ![macinstall](/images/screenshots/mac/macinstall.png)
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
+   ![mewtready](/images/screenshots/mac/mewtready.png)
+   </details>
 
 * Linux
   <details>
@@ -744,19 +754,27 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    1. In _**File Explorer**_ navigate to _**C:\mewt**_
    1. To run Mewt in Headless/No-User-Interface mode, run **start_mewt.bat**
    ![startmewt](/images/screenshots/windows/startmewt.png)
-   * To exit from Headless/No-User-Interfce mode, simply unplug your Mewt from the USB port
+   * To exit from Headless/No-User-Interface mode, simply unplug your Mewt from the USB port
    1. To run Mewt in Verbose mode, run **start_mewt_verbose.bat**.  This will open a console that will provide more information.
    ![startmewtverbose](/images/screenshots/windows/startmewtverbose.png)
    ![mewtverbose](/images/screenshots/windows/mewtverbose.png)
+   * To exit from Verbose mode, you can hit ***Ctrl+C***, or close the ***PowerShell*** window or simply unplug your Mewt from the USB port
+   * The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn the primary microphone in your system from Unmuted to Muted, and vice versa.
+   
    </details> 
  
 * Mac
   <details>
    <summary>Click to expand</summary>
    
-   **mac**
+   1. Open ***Terminal*** from ***Finder->Applications->Utilities->Terminal***
+   1. In the Terminal console, navigate to where you unzipped **mewt.zip** _typically this is **cd $HOME/Downloads/mewt**_
+   1. Type in ***python mewt.py***
+   ![mewtready](/images/screenshots/mac/mewtready.png)
+   * To exit from Verbose mode, you can hit ***Ctrl+C***, or close the ***PowerShell*** window or simply unplug your Mewt from the USB port
+   * The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn the primary microphone in your system from Unmuted to Muted, and vice versa.
+   * After you exit Mewt from the terminal, the light on the button will stay on until you restart Mewt or you unplug Mewt from the USB port
    </details>
- 
 
 * Linux
   <details>
