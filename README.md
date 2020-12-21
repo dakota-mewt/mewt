@@ -702,7 +702,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    
    </details>  
 
-   </details>
+   
 * Mac
   <details>
    <summary>Click to expand</summary>
@@ -718,10 +718,40 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    linux
    </details>
    
+</details>
 
 ## Running Mewt
 <details>
  <summary>Click to expand</summary>
+ 
+ 
+* Windows
+  <details>
+   <summary>Click to expand</summary>
+   
+   1. In _**File Explorer**_ navigate to _**C:\mewt**_
+   1. To run Mewt in Headless/No-User-Interface mode, run **start_mewt.bat**
+   ![startmewt](/images/screenshots/windows/startmewt.png)
+   * To exit from Headless/No-User-Interfce mode, simply unplug your Mewt from the USB port
+   1. To run Mewt in Verbose mode, run **start_mewt_verbose.bat**.  This will open a console that will provide more information.
+   ![startmewtverbose](/images/screenshots/windows/startmewtverbose.png)
+   ![mewtverbose](/images/screenshots/windows/mewtverbose.png)
+   </details> 
+ 
+* Mac
+  <details>
+   <summary>Click to expand</summary>
+   
+   **mac**
+   </details>
+ 
+
+* Linux
+  <details>
+   <summary>Click to expand</summary>
+   
+   linux
+   </details> 
 </details>
 
 ## Make your enclosure
