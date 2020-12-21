@@ -654,7 +654,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    ![windowsdefender](/images/screenshots/windows/windowsdefender.png)![runanyway](/images/screenshots/windows/runanyway.png)![unknownpublisher](/images/screenshots/windows/unknownpublisher.png)
    1. You will then see Mewt install itself
    ![installingmewt](/images/screenshots/windows/installingmewt.png)
-   1. Finally, you will see a prompt to plug Mewt into a USB port
+   1. You will see a prompt to plug Mewt into a USB port
    ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
    1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
    ![mewtfirsttime](/images/mewtfirsttime.gif)
@@ -669,8 +669,36 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   **4**  | Hot-mic display  ![yellow](/images/mewt/yellow.jpg) 
   **5**  | Hot-mic display  ![white](/images/mewt/white.jpg) 
   **101**  | Microphone devices have changed ![greenblink3x](/images/mewt/greenblink3x.gif)
-   1. To test out Mewt, go to [online-voice-recorder.com](https://online-voice-recorder.com/), and click on the red button to record.  You should see it react to any sounds your microphone picks up.  
-   ![onlinevoicerecorder](/images/onlinevoicerecorder.gif)   
+   * To test out Mewt, go to [online-voice-recorder.com](https://online-voice-recorder.com/), and click on the red button to record.  You should see it react to any sounds your microphone picks up.  
+   ![onlinevoicerecorder](/images/onlinevoicerecorder.gif)  
+   ![mewtdemo](/images/mewtdemo.gif)
+   
+   <details>
+     <summary>
+  
+     _Curious as to what the installation program did? Did the installation not work?  Click here to expand_
+     </summary>
+     
+   1. **mewt.exe** is a self-extracting version of **mewt.zip**.  
+   1. Download **[mewt.zip](/code/windows/mewt.zip)** to your computer
+   1. Navigate to where you saved **mewt.zip**, right click on it and select _**Extract All**_
+   ![extractall](/images/screenshots/windows/extractall.png)
+   1. In the next window, type in _**c:\mewt**_ then _**Extract**_
+   ![extracttocmewt](/images/screenshots/windows/extracttocmewt.png)
+   1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
+   1. In _**File Explorer**_ navigate to **c:\mewt**, right click on **setup_mewt.bat** (its icon has gears in it), then select _**Open**_
+   ![setup_mewt.bat](/images/screenshots/windows/setup_mewt.bat.png)
+   1. You will see a prompt to plug Mewt into a USB port
+   ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
+   ![mewtfirsttime](/images/mewtfirsttime.gif)
+   1. The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn every microphone in your system from Unmuted to Muted, and vice versa.  Below are what the colors represent:
+   
+   
+   
+   </details>  
+
+   </details>
 * Mac
   <details>
    <summary>Click to expand</summary>
