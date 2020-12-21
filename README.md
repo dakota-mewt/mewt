@@ -31,6 +31,10 @@ Mewt is made up of 2 parts:
 </details>
 
 # How to build it
+<details>
+ <summary>Click to expand</summary>
+
+
 ## Get physical components
 <details>
  <summary>Click to expand</summary>
@@ -713,7 +717,26 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    
    linux
    </details>
+   
+
+## Running Mewt
+<details>
+ <summary>Click to expand</summary>
 </details>
+
+## Make your enclosure
+<details>
+ <summary>Click to expand</summary>
+</details>   
+   
+</details>
+</details>
+
+# How does the code work
+<details>
+ <summary>Click to expand</summary>
+</details>
+
 
 # How you can support Mewt
 <details>
