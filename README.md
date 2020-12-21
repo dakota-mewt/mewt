@@ -7,6 +7,8 @@ Mewt will **continuously display the current Mute/Unmute state** so you can tell
 
 When Mewt detects that your microphone is transmitting audio, it will display a sound visualizer to help you **avoid embarassing hot-mic incidents via RGB LED light indicator**. _currently works in Windows, but not Mac or Linux_
 
+![mewtdemo](/images/mewtdemo.gif)
+
 Muted | Unmuted | Hot Mic
 ------------ | ------------- | -------------
 ![mewt](/images/mewt/red.jpg) | ![unmewt](/images/mewt/blue.jpg) | ![Hot Mic](/images/mewt/hotmic.gif)
@@ -643,8 +645,8 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   <details>
    <summary>Click to expand</summary>
    
-   1. Download [mewt.exe](/code/windows/mewt.exe)
-   _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading.
+   1. Download [mewt.exe](/code/windows/mewt.exe)   
+   _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
    ![keepanyway](/images/screenshots/windows/keepanyway.png)
    1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
    1. Find where you downloaded **mewt.exe** and run the file.
@@ -654,7 +656,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    ![installingmewt](/images/screenshots/windows/installingmewt.png)
    1. Finally, you will see a prompt to plug Mewt into a USB port
    ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
-   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a brief delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Depending on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on.  
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
    ![mewtfirsttime](/images/mewtfirsttime.gif)
    1. The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn every microphone in your system from Unmuted to Muted, and vice versa.  Below are what the colors represent:
 
@@ -703,4 +705,5 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  
  If you can report back via this 5 second [#UnMewtForGood questionnaire](https://www.surveymonkey.com/r/DFHGL6H), it would really make my day.  I'm hoping we can push out $1000 and/or 100 hours of kindness from this little corner of the internet.
  </details>
+
 
