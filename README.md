@@ -590,10 +590,18 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 <details>
  <summary>Click to expand</summary>
  
+ ### PC
   _ | Common Cathode LED | Common Anode LED 
   :------------: | :-------------: | :-------------: 
-  Momentary Button| [momentary_common_cathode.ino](/code/arduino/momentary_common_cathode.ino) | [momentary_common_anode.ino](/code/arduino/momentary_common_anode.ino) 
-  Latching Button  | [latch_rgb_common_cathode.ino](/code/arduino/latch_rgb_common_cathode.ino) | [latch_rgb_common_anode.ino](/code/arduino/latch_rgb_common_anode.ino) 
+  Momentary Button| [pc_momentary_common_cathode.ino](/code/arduino/pc_momentary_common_cathode.ino) | [pc_momentary_common_anode.ino](/code/arduino/pc_momentary_common_anode.ino) 
+  Latching Button  | [pc_latch_rgb_common_cathode.ino](/code/arduino/pc_latch_rgb_common_cathode.ino) | [pc_latch_rgb_common_anode.ino](/code/arduino/pc_latch_rgb_common_anode.ino) 
+
+ ### Mac and Linux
+  _ | Common Cathode LED | Common Anode LED 
+  :------------: | :-------------: | :-------------: 
+  Momentary Button| [maclinux_momentary_common_cathode.ino](/code/arduino/maclinux_momentary_common_cathode.ino) | [maclinux_momentary_common_anode.ino](/code/arduino/maclinux_momentary_common_anode.ino) 
+  Latching Button  | [maclinux_latch_rgb_common_cathode.ino](/code/arduino/maclinux_latch_rgb_common_cathode.ino) | [maclinux_latch_rgb_common_anode.ino](/code/arduino/maclinux_latch_rgb_common_anode.ino) 
+
 
 <details>
  <summary>
@@ -608,6 +616,10 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 * A **Latching Button** stays locked to an on state or an off state depending on if you've pressed or released the button.  Arduino can simply read the current state to figure out if you intend Mewt to be enabled or not.
 
 * A **Momentary Button** resets itself when you release the button.  Because of this lack of memory (or state), Arduino cannot rely on the status of the button to tell if Mewt should be enabled or not.  Instead, Arduino needs to keep track of the state inside the code with the use of a variable.
+
+* The **PC Mewt** streams back the microphone mute/unmute state and transmitted volume (if applicable).  Therefore, Mewt can rely on a continuous state signal to decide which color to display.
+
+* The **Mac / Linux Mewt** currently cannot stream back mute/unmute state and transmitted volume.  Mewt relies on knowledge of the mute/unmute state of the microphone at the time of button press to determine which color to display.  
 </details>
 
 1. Load the program applicable to your components into your Arduino IDE editor 
