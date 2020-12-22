@@ -823,6 +823,33 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  <summary>Click to expand</summary>
  
 Details to come
+
+* Arduino
+<details>
+ <summary>Click to expand</summary>
+Details to come
+</details>
+
+* Windows
+<details>
+ <summary>Click to expand</summary>
+Details to come
+</details>
+
+
+* Mac
+<details>
+ <summary>Click to expand</summary>
+Details to come
+</details>
+
+
+* Linux
+<details>
+ <summary>Click to expand</summary>
+Details to come
+</details>
+
 </details>
 
 
