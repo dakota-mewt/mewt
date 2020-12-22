@@ -10,7 +10,7 @@ When Mewt detects that your microphone is transmitting audio, it will display a 
 ![mewtdemo](/images/mewtdemo.gif)
 
 Muted | Unmuted | Hot Mic
------------- | ------------- | -------------
+:------------: | :-------------: | :-------------:
 ![mewt](/images/mewt/red.jpg) | ![unmewt](/images/mewt/blue.jpg) | ![Hot Mic](/images/mewt/hotmic.gif)
 
 # How Mewt works
@@ -803,9 +803,19 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 ## Make your enclosure
 <details>
  <summary>Click to expand</summary>
+ 
+ Here are some different ways Mewt can be implemented.
+
+  Basic | Switch | Stick
+  :------------: | :-------------: | :-------------:
+  ![basic](/images/prototypes/basic.png) | ![switch](/images/prototypes/switch.png) | ![stick](/images/prototypes/stick.png)
+  Small Button | Medium Button | Medium Button
+  ![smallbutton](/images/prototypes/smallbutton.png) | ![mediumbutton](/images/prototypes/mediumbutton.png) | ![mediumbutton2](/images/prototypes/mediumbutton2.png)
+  Huge Button | 3D printed top | 3D printed bottom
+  ![hugebutton](/images/prototypes/hugebutton.png) | ![3dprintedtop](/images/prototypes/3dprintedtop.png) | ![3dprintedbottom](/images/prototypes/3dprintedbottom.png)
+
 </details>   
-   
-</details>
+
 </details>
 
 # How does the Mewt code work
