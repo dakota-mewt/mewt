@@ -737,7 +737,19 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   <details>
    <summary>Click to expand</summary>
    
-   linux
+   1. Download [mewt.zip](/code/linux/mewt.zip)   
+   1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
+   1. Navigate to where you extracted **mewt.zip** from ***Terminal***
+   1. Type in ***python3 linux_install_mewt.py***, wait for the prompt to plug in your Mewt
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
+   1. Run **pacmd list-sources** to list all audio devices in your system.  
+   1. With [online-voice-recorder.com](https://online-voice-recorder.com/) running, iterate through your sources with the below command until you identify the one that will correctly mute your microphone
+   **pacmd set-source-mute X 1** _where X = your source number.  Start with 0 and work upwards_
+   1. Once you have identified your microphone, **grep pacmd linux_mewt.py** to find the 2 instances where it's called and replace the microphone index.
+   * Here are some links to get you started when you inevitably run into dependency/libraries/access issues
+   * [How to install python3-pip on ubuntu 20.04](https://stackoverflow.com/questions/62317653/how-to-install-python3-pip-on-ubuntu-20-04)
+   * [SerialException: could not open port /dev/ttyACM0](https://github.com/purduesigbots/pros-cli/issues/45)
+   * [Command to mute and unmute a microphone](https://askubuntu.com/questions/12100/command-to-mute-and-unmute-a-microphone)
    </details>
    
 </details>
@@ -780,7 +792,11 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   <details>
    <summary>Click to expand</summary>
    
-   linux
+   1. Open ***Terminal*** 
+   1. In the Terminal console, navigate to where you unzipped **mewt.zip**
+   1. Type in ***python3 linux_mewt.py***
+   * The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn the primary microphone in your system from Unmuted to Muted, and vice versa.
+   * After you exit Mewt from the terminal, the light on the button will stay on until you restart Mewt or you unplug Mewt from the USB port
    </details> 
 </details>
 
