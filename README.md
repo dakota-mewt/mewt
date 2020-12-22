@@ -824,6 +824,8 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 </details>
 
 
+
+
 # How you can support Mewt
 <details>
  <summary>Click to expand</summary>
@@ -843,4 +845,6 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  If you can report back via this 5 second [#UnMewtForGood questionnaire](https://www.surveymonkey.com/r/DFHGL6H), it would really make my day.  I'm hoping we can push out $1000 and/or 100 hours of kindness from this little corner of the internet.
  </details>
 
+# Questions/Comments/Help
+Join me on the [Mewt Discord](https://discord.gg/aGfKgpkcu9)
 
