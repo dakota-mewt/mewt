@@ -1,4 +1,6 @@
-The library included in the Mewt code that can be found here https://github.com/frgnca/AudioDeviceCmdlets is licensed under the MIT license as follows:
+The library included in the Mewt code that can be found here 
+https://github.com/frgnca/AudioDeviceCmdlets is licensed under the MIT license 
+as follows:
 
 MIT License
 Copyright (c) 2016-2018 Francois Gendron <fg@frgn.ca>
@@ -21,7 +23,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-All other Mewt code is licensed by Mewt, LLC pursuant to the GNU General Public License v. 3.
+All other Mewt code is licensed by Mewt, LLC pursuant to the GNU General Public 
+License v. 3.
+
 Copyright 2020, Mewt, LLC. All rights not expressly granted are reserved.
 
                     GNU GENERAL PUBLIC LICENSE
