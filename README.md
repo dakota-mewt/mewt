@@ -136,7 +136,6 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
    1. You should see a listing for **_Arduino [specific model] (COMx)_** where **_x_** is usually a number from 3 - 15 
    ![ports](/images/screenshots/windows/ports.png)
    1. Jot down the COMx serial port somewhere, we'll need to reference it later
-   * _If you do not see your Arduino here, or if you see a question mark icon, we will need to [Troubleshoot](#Troubleshooting)_
    </details>
 
 * Mac
