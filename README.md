@@ -7,7 +7,7 @@ Mewt will **continuously display the current Mute/Unmute state** so you can tell
 
 When Mewt detects that your microphone is transmitting audio, it will display a sound visualizer to help you **avoid embarassing hot-mic incidents via RGB LED light indicator**. _Hot mic currently works in Windows, but not yet in Mac or Linux_
 
-![mewtdemo](/images/mewtdemo.gif)
+![mewtdemo](/images/mewtdemolowrez.gif)
 
 Muted | Unmuted | Hot Mic
 :------------: | :-------------: | :-------------:
