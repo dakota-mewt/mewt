@@ -825,132 +825,132 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  <summary>Click to expand</summary>
  
 * **Arduino**
-<details>
- <summary>Click to expand</summary>
-Mewt's Arduino code wires the below inputs, outputs and placeholders together:
+   <details>
+    <summary>Click to expand</summary>
+   Mewt's Arduino code wires the below inputs, outputs and placeholders together:
 
-**Input from user**
-  * Button: User issues command to Mewt to mute/unmute microphone by pressing the button
- 
-**Output to computer**
-  * Serial: Arduino opens up a communications channel to pass along the user input via commands to the computer.  1=mute, 0=unmute
-  
-**Input from computer**
-  * Serial: After the computer issues the command to mute/unmute the system microphone, it passes a value to Arduino to represent the current state of the microphone.  0=muted, 1=umuted.  It is also possible to receive values >1 if the computer supports streaming microphone volume data (for hot-mic support).  
-  
-**Output to user**
-  * LED: Arduino takes the input from computer and maps them into different colors to be displayed to the user via the combination of RGB LED lights.  
-   
-   Value | Meaning | RGB | Color
-  :------------: | :-------------: | :-------------: |  :-------------: 
-  0 | Muted | R | Red
-  1 | Unmuted | B | Blue
-  2 | Button pressed | G | Green
-  mod 3 = 0 (3, 6, 9, etc.) | Hot-mic | RB | Purple
-  mod 3 = 1 (4, 7, 10, etc.) | Hot-mic | RG | Yellow
-  mod 3 = 2 (5, 8, 11, etc.) | Hot-mic | RGB | White
-  101 | There's a change to the system audio devices | G G G | Flashes green 3x
-  
-**Placeholders**
-  * toggleState: for momentary buttons, this help to keep track of whether the last button press resulted in a mute or an unmute, since you cannot read this off the button itself
-  * lastLedDisplayUpdate: keeps track of when the last udpate came in from the computer, helps it figure out when Mewt is no longer running on the computer
-  * lastVolume: keeps track of the previous volume.  This is currently deprecated.  It was previously used to detect volume changes to allow a single LED light to be flickered for Hot-mic if there was no RGB available
-  * ledDisplay: holds the value received from the computer and is used to determine which color LED to light
-  
-**Pseudocode**
-  * Read current state of button
-  * Read value from computer
-  * Figure out what RGB to turn on depending on value from computer
-  * Timestamps last value from computer
-  * If it's been longer than 1 second since last value from computer, shut down all LEDs to avoid user confusion
-  * If button was pressed, turn on Green LED to provide feedback to user
-  * Read current state of button again
-  * If button was previously pressed, and is now released, then user has toggled mute/unmute.  Save mute state to memory.  Send command via serial to computer.
-  
-  
- 
-</details>
+   **Input from user**
+     * Button: User issues command to Mewt to mute/unmute microphone by pressing the button
+
+   **Output to computer**
+     * Serial: Arduino opens up a communications channel to pass along the user input via commands to the computer.  1=mute, 0=unmute
+
+   **Input from computer**
+     * Serial: After the computer issues the command to mute/unmute the system microphone, it passes a value to Arduino to represent the current state of the microphone.  0=muted, 1=umuted.  It is also possible to receive values >1 if the computer supports streaming microphone volume data (for hot-mic support).  
+
+   **Output to user**
+     * LED: Arduino takes the input from computer and maps them into different colors to be displayed to the user via the combination of RGB LED lights.  
+
+      Value | Meaning | RGB | Color
+     :------------: | :-------------: | :-------------: |  :-------------: 
+     0 | Muted | R | Red
+     1 | Unmuted | B | Blue
+     2 | Button pressed | G | Green
+     mod 3 = 0 (3, 6, 9, etc.) | Hot-mic | RB | Purple
+     mod 3 = 1 (4, 7, 10, etc.) | Hot-mic | RG | Yellow
+     mod 3 = 2 (5, 8, 11, etc.) | Hot-mic | RGB | White
+     101 | There's a change to the system audio devices | G G G | Flashes green 3x
+
+   **Placeholders**
+     * toggleState: for momentary buttons, this help to keep track of whether the last button press resulted in a mute or an unmute, since you cannot read this off the button itself
+     * lastLedDisplayUpdate: keeps track of when the last udpate came in from the computer, helps it figure out when Mewt is no longer running on the computer
+     * lastVolume: keeps track of the previous volume.  This is currently deprecated.  It was previously used to detect volume changes to allow a single LED light to be flickered for Hot-mic if there was no RGB available
+     * ledDisplay: holds the value received from the computer and is used to determine which color LED to light
+
+   **Pseudocode**
+     * Read current state of button
+     * Read value from computer
+     * Figure out what RGB to turn on depending on value from computer
+     * Timestamps last value from computer
+     * If it's been longer than 1 second since last value from computer, shut down all LEDs to avoid user confusion
+     * If button was pressed, turn on Green LED to provide feedback to user
+     * Read current state of button again
+     * If button was previously pressed, and is now released, then user has toggled mute/unmute.  Save mute state to memory.  Send command via serial to computer.
+
+
+
+   </details>
 
 * **Windows**
-<details>
- <summary>Click to expand</summary>
- 
-Mewt Windows leverages the AudioDeviceCmdlets PowerShell library for its communications with system microphones.  See [Acknowledgments](#Acknowledgments)
+   <details>
+    <summary>Click to expand</summary>
 
-**Setup Pseudocode**
-  * Reads command line arguments *Passing **Zoom** or **Meet** as an argument will make Mewt attempt to send the shortcut for application-level muting respectively
-  * Reads the COM port to look for Mewt on from **mewt_com_port.txt**.  *should have been detected and written as part of the setup*
-  * Imports AudioDeviceCmdlets library
-  * If it's the first time Mewt/AudioDeviceCmdlets has run on this computer, it will install/copy the files to the correct directories for future use
-  * Opens a separate process to output the volume stream of the current microphone to a file **out.txt**
-  * Creates a Serial bus communicatioons using the COM port from above
-  * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up
-  * Clears the console and outputs ***Mewt Ready*** *for verbose mode*
-  * Declares some temporary variables to keep state for last button state and ***unmewtable device*** *I encountered USB microphone that unmuted itself right after a mute command was sent that needed specialized treatment*
-  * Takes a snapshot of all system audio devices, filtered down to just the microphones/recording devices
-  * Starts a timer to gauge how long each press is taking to effect *for verbose mode*
+   Mewt Windows leverages the AudioDeviceCmdlets PowerShell library for its communications with system microphones.  See [Acknowledgments](#Acknowledgments)
 
-**Loop Pseudocode**
-  * Take the last value from audio stream and write it to **mewt_stream.txt**
-  * Queries current mute state from computer and inverts it *AudioDeviceCmdlets returns 1 for mute, but Mewt sends 0 for mute in order to more logically support hot-mic
-  * If current state is unmuted, but microphone is capturing no volume, AudioDeviceCmdlets returns 0.  Replace this 0 to 1 before sending to Mewt
-  * Otherwise, send last volume value to Mewt
-  * Check against previous mute state to prevent unnecessary commands *sending mute when microphone is currently muted*
-  * Read button state from Arduino
-  * Timestamps mute state change start
-  * If we received **Zoom** or **Meet** from command line argument, then switch windows focus to Zoom or Google Chrome respectively and send appropriate shortcut key *the Chrome tab that Meet is on has to be the in-focus tab for this to work*
-  * Iteratives through each available system microphone and mutes them individually, making sure to save the primary microphone, and checking if there's been a change of devices *removed a device or added a device*
-  * For every microphone muted/unmuted, timestamps how long it took from start to finish
-  * Checks for ***unmewtable device*** *if user wants to mute, and we muted every microphone, but a microphone subsequently reports that it's unmuted*
-  * Waits for a fraction over half a second and mutes that unmewtable device again *beats me why this works, it just does*
-  * Once we have discovered an unmewtable device, we will save it so that we don't waste time checking it every time.  Mewt will go directly to doing a 2nd mute attempt on these devices
-  * Exits if port to Arduino no longer active *if Mewt is physically unplugged*
+   **Setup Pseudocode**
+     * Reads command line arguments *Passing **Zoom** or **Meet** as an argument will make Mewt attempt to send the shortcut for application-level muting respectively
+     * Reads the COM port to look for Mewt on from **mewt_com_port.txt**.  *should have been detected and written as part of the setup*
+     * Imports AudioDeviceCmdlets library
+     * If it's the first time Mewt/AudioDeviceCmdlets has run on this computer, it will install/copy the files to the correct directories for future use
+     * Opens a separate process to output the volume stream of the current microphone to a file **out.txt**
+     * Creates a Serial bus communicatioons using the COM port from above
+     * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up
+     * Clears the console and outputs ***Mewt Ready*** *for verbose mode*
+     * Declares some temporary variables to keep state for last button state and ***unmewtable device*** *I encountered USB microphone that unmuted itself right after a mute command was sent that needed specialized treatment*
+     * Takes a snapshot of all system audio devices, filtered down to just the microphones/recording devices
+     * Starts a timer to gauge how long each press is taking to effect *for verbose mode*
 
-</details>
+   **Loop Pseudocode**
+     * Take the last value from audio stream and write it to **mewt_stream.txt**
+     * Queries current mute state from computer and inverts it *AudioDeviceCmdlets returns 1 for mute, but Mewt sends 0 for mute in order to more logically support hot-mic
+     * If current state is unmuted, but microphone is capturing no volume, AudioDeviceCmdlets returns 0.  Replace this 0 to 1 before sending to Mewt
+     * Otherwise, send last volume value to Mewt
+     * Check against previous mute state to prevent unnecessary commands *sending mute when microphone is currently muted*
+     * Read button state from Arduino
+     * Timestamps mute state change start
+     * If we received **Zoom** or **Meet** from command line argument, then switch windows focus to Zoom or Google Chrome respectively and send appropriate shortcut key *the Chrome tab that Meet is on has to be the in-focus tab for this to work*
+     * Iteratives through each available system microphone and mutes them individually, making sure to save the primary microphone, and checking if there's been a change of devices *removed a device or added a device*
+     * For every microphone muted/unmuted, timestamps how long it took from start to finish
+     * Checks for ***unmewtable device*** *if user wants to mute, and we muted every microphone, but a microphone subsequently reports that it's unmuted*
+     * Waits for a fraction over half a second and mutes that unmewtable device again *beats me why this works, it just does*
+     * Once we have discovered an unmewtable device, we will save it so that we don't waste time checking it every time.  Mewt will go directly to doing a 2nd mute attempt on these devices
+     * Exits if port to Arduino no longer active *if Mewt is physically unplugged*
+
+   </details>
 
 
 * **Mac**
-<details>
- <summary>Click to expand</summary>
- 
-Mewt Mac leverages AppleScript in order to set the recording volume of the primary microphone to 0 for mute, and 100 for unmute.  *There is a more robust way to actually mute microphones (as opposed to setting volume to 0), and to iterate through each microphone.  To do so, we can leverage the **Audio MIDI Setup** application.  However, this currently takes 3-5 seconds per toggle and is not efficient enough to use without further optimization.  
+   <details>
+    <summary>Click to expand</summary>
 
-**Setup Pseudocode**
-  * Reads the COM port to look for Mewt on from **port_arduino**.  *should have been detected and written as part of the setup*
-  * Creates a Serial bus communicatioons using the COM port from above
-  * Declares some temporary variables to keep state for last button state  
-  * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up  
-  * Clears the console
-  
-**Loop Pseudocode**
-  * Read button state from Arduino
-  * _test_data.csv_ refers to hot-mic feature that is currently being tested and not yet integrated
-  * If 1 received, then mute by calling **mac_native_mewt.scpt** AppleScript
-  * Otherwise, if 0 received, then unmute by calling **mac_native_unmewt.scpt** AppleScript
-  * Write 1/0 for mute/unmute to serial so Arduino can display the correct status lights
-</details>
+   Mewt Mac leverages AppleScript in order to set the recording volume of the primary microphone to 0 for mute, and 100 for unmute.  *There is a more robust way to actually mute microphones (as opposed to setting volume to 0), and to iterate through each microphone.  To do so, we can leverage the **Audio MIDI Setup** application.  However, this currently takes 3-5 seconds per toggle and is not efficient enough to use without further optimization.  
+
+   **Setup Pseudocode**
+     * Reads the COM port to look for Mewt on from **port_arduino**.  *should have been detected and written as part of the setup*
+     * Creates a Serial bus communicatioons using the COM port from above
+     * Declares some temporary variables to keep state for last button state  
+     * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up  
+     * Clears the console
+
+   **Loop Pseudocode**
+     * Read button state from Arduino
+     * _test_data.csv_ refers to hot-mic feature that is currently being tested and not yet integrated
+     * If 1 received, then mute by calling **mac_native_mewt.scpt** AppleScript
+     * Otherwise, if 0 received, then unmute by calling **mac_native_unmewt.scpt** AppleScript
+     * Write 1/0 for mute/unmute to serial so Arduino can display the correct status lights
+   </details>
 
 
 * **Linux**
-<details>
- <summary>Click to expand</summary>
+   <details>
+    <summary>Click to expand</summary>
 
-Mewt Linux was tested on Ubuntu 20.04 LTS and 18.04LTS.  It leverages the PulseAudio library for its communications with system microphones.  See [Acknowledgments](#Acknowledgments)  *The code currently mutes/unmutes a single microphone as opposed to iterating through every single device.  Since you're a Linux user, have at it!*  
+   Mewt Linux was tested on Ubuntu 20.04 LTS and 18.04LTS.  It leverages the PulseAudio library for its communications with system microphones.  See [Acknowledgments](#Acknowledgments)  *The code currently mutes/unmutes a single microphone as opposed to iterating through every single device.  Since you're a Linux user, have at it!*  
 
-**Setup Pseudocode**
-  * Reads the COM port to look for Mewt on from **port_arduino**.  *should have been detected and written as part of the setup*
-  * Creates a Serial bus communicatioons using the COM port from above
-  * Declares some temporary variables to keep state for last button state  
-  * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up  
-  * Clears the console
-  
-**Loop Pseudocode**
-  * Read button state from Arduino
-  * _test_data.csv_ refers to hot-mic feature that is currently being tested and not yet integrated
-  * If 1 received, then mute by calling **pacmd set-source-mute _X_ 1** _where X is microphone to be muted
-  * Otherwise, if 0 received, then unmute by calling **pacmd set-source-mute _X_01** _where X is microphone to be unmuted
-  * Write 1/0 for mute/unmute to serial so Arduino can display the correct status lights
-</details>
+   **Setup Pseudocode**
+     * Reads the COM port to look for Mewt on from **port_arduino**.  *should have been detected and written as part of the setup*
+     * Creates a Serial bus communicatioons using the COM port from above
+     * Declares some temporary variables to keep state for last button state  
+     * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up  
+     * Clears the console
+
+   **Loop Pseudocode**
+     * Read button state from Arduino
+     * _test_data.csv_ refers to hot-mic feature that is currently being tested and not yet integrated
+     * If 1 received, then mute by calling **pacmd set-source-mute _X_ 1** _where X is microphone to be muted
+     * Otherwise, if 0 received, then unmute by calling **pacmd set-source-mute _X_01** _where X is microphone to be unmuted
+     * Write 1/0 for mute/unmute to serial so Arduino can display the correct status lights
+   </details>
 </details>
 
 </details>
