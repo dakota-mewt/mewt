@@ -63,9 +63,11 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 
   _ |Latch | Momentary | Switch 
   :-------------: | :-------------: | :-------------: | :-------------:
-  Basic | ![basiclatching](/images/basiclatching.png)[$3](https://www.amazon.com/dp/B07WGNSRXR) | ![basicmomentary](/images/basicmomentary.png)[$3](https://www.amazon.com/dp/B07VSFLTMJ) | ![basictoggleswitch](/images/basictoggleswitch.png)[$3](https://www.amazon.com/dp/B07SXRKY6C/) 
-  Deluxe | ![deluxelatching](/images/deluxelatching.png)[$8](https://www.amazon.com/gp/product/B07KQ3P2Y2) | ![deluxemomentary](/images/deluxemomentary.png)[$18](https://www.ebay.com/itm/333311892227) | ![deluxetoggleswitch](/images/deluxetoggleswitch.png)[$10](https://www.amazon.com/gp/product/B008DG7NWQ) 
+  Basic* | ![basiclatching](/images/basiclatching.png)[$3](https://www.amazon.com/dp/B07WGNSRXR) | ![basicmomentary](/images/basicmomentary.png)[$3](https://www.amazon.com/dp/B07VSFLTMJ) | ![basictoggleswitch](/images/basictoggleswitch.png)[$3](https://www.amazon.com/dp/B07SXRKY6C/) 
+  Deluxe | ![deluxelatching](/images/deluxelatching.png)[$8](https://www.amazon.com/gp/product/B07KQ3P2Y2) | ![deluxemomentary](/images/deluxemomentary.png)[$18](https://www.ebay.com/itm/333311892227) | ![deluxetoggleswitch](/images/deluxetoggleswitch.png)[$10*](https://www.amazon.com/gp/product/B008DG7NWQ) 
   </details>
+  
+  * *buttons without built-in RGB LEDs will require that you separately wire in an RGB for hot-mic, or run modified code for hot-mic to display a blinking LED instead of flashing colors
 
 ### 2. Get an Arduino microcontroller (~$10)
 * $8[![cheappromicro](/images/cheappromicro.png)](https://www.amazon.com/dp/B07J2Q3ZD5/)
