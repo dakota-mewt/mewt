@@ -1,4 +1,7 @@
 # Gather your stuff
+<details>
+ <summary>Click to expand</summary> 
+
 ## Software
 <details>
  <summary>Click to expand</summary> 
@@ -60,6 +63,7 @@
    https://www.amazon.com/dp/B01CZVZ16O 
    </details>  
 
+</details>
 </details>
 
 # Test your Stuff
