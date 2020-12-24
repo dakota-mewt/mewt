@@ -845,7 +845,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    **Output to user**
      * LED: Arduino takes the input from computer and maps them into different colors to be displayed to the user via the combination of RGB LED lights.  
 
-      Value | Meaning | RGB | Color
+     Value | Meaning | RGB | Color
      :------------: | :-------------: | :-------------: |  :-------------: 
      0 | Muted | R | Red
      1 | Unmuted | B | Blue
