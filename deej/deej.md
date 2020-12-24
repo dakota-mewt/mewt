@@ -43,21 +43,23 @@
 <details>
  <summary>Click to expand</summary> 
  
- <details>
+ 
  
  * Arduino - pick one and get it
-  <summary>Click to expand</summary> 
-  
-  pro micro
-  </details>
+   <details>
+   <summary>Click to expand</summary> 
+
+   pro micro
+   </details>
  
-  <details>
+  
  
  * Potentiators ("Pots")
-  <summary>Click to expand</summary> 
-  
-  pots
-  </details>  
+   <details>
+   <summary>Click to expand</summary> 
+
+   pots
+   </details>  
 
 </details>
 
