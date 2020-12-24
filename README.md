@@ -171,6 +171,8 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
  <summary>Click to expand</summary>
 
 1. Go to [The Arduino Download Page](https://www.arduino.cc/en/software) to download the latest IDE for your OS
+1. Click on **Windows Installer** to download the latest version
+![arduinodownload](/images/screenshots/arduino/arduinodownload.png)
 1. Install and launch the IDE
 1. Select **_File->New_** and delete everything in the new window that opens up
 1. Select **_Tools->Board_** and choose your Arduino model.  _for Pro Micros, choose Arduino Leonardo_ 
