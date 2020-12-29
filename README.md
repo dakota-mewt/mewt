@@ -442,7 +442,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <details>
    <summary>Click to expand</summary>
    
-   * A Common (sometimes labeled **C** or **+**) - you will connect this to **5V** on your Arduino
+   * A Common (sometimes labeled **C** or **+**) - you will connect this to **5V/VCC** on your Arduino
    * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
    ![ledtestwiring-commonannode](/images/ledtestwiring-commonanode.png)
    
@@ -579,7 +579,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 * LED red -> D4
 * LED blue -> D7
 * LED green -> D9
-* LED common (anode) -> 5V
+* LED common (anode) -> 5V/VCC 
 * LED common (cathode) -> GND
 
   _ | Common Cathode LED | Common Anode LED 
@@ -614,7 +614,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 
 * A **Common Cathode** LED shares a connection to Arduino's GND (-).  Arduino sets the state based on changing the voltage applied to the pin.  When you want to turn on an LED light, the code instructs Arduino to send a value of **HIGH**
 
-* A **Common Anode** LED shares a connection to Arduino's 5V (+).  When you want to turn on an LED light, the code instructs Arduino to send a value of **LOW**
+* A **Common Anode** LED shares a connection to Arduino's 5V/VCC (+).  When you want to turn on an LED light, the code instructs Arduino to send a value of **LOW**
 
 * A **Latching Button** stays locked to an on state or an off state depending on if you've pressed or released the button.  Arduino can simply read the current state to figure out if you intend Mewt to be enabled or not.
 
