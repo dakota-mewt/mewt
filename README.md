@@ -109,6 +109,11 @@ You may be interested in building a simplified version of Mewt because you don't
 
 It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs, resistors).  Plus you still have spare parts to make other projects when you're done!
 
+
+**Or a Microbit**:
+* $15[![microbit](/images/prototypes/microbit.png)](https://www.adafruit.com/product/3530)
+
+You won't have to wire **ANYTHING** up, the buttons and LED displays are built-in.
  </details>
  
 
@@ -816,8 +821,8 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   ![smallbutton](/images/prototypes/smallbutton.png) | ![mediumbutton](/images/prototypes/mediumbutton.png) | ![mediumbutton2](/images/prototypes/mediumbutton2.png)
   Huge Button | Switch | Stick
   ![hugebutton](/images/prototypes/hugebutton.png) | ![switch](/images/prototypes/switch.png) | ![stick](/images/prototypes/stick.png)
-  Snap Circuits | - | -
-  ![snapcircuits](/images/prototypes/snapcircuits.png) | - | -
+  Snap Circuits | Microbit | -
+  ![snapcircuits](/images/prototypes/snapcircuits.png) | ![microbit](/images/prototypes/microbit.png) | -
 
 
 </details>   
