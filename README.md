@@ -112,9 +112,9 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 
 **Or a Microbit**:
 * $15[![microbit](/images/prototypes/microbit.png)](https://www.adafruit.com/product/3530)
-
-You won't have to wire **ANYTHING** up, the buttons and LED displays are built-in.
- </details>
+* You won't have to wire **ANYTHING** up, the buttons and LED displays are built-in.
+* Skip directly to the section **How to build Mewt -> Test your assembled Mewt**
+</details>
  
 
 </details>
@@ -597,6 +597,14 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 ## Test your assembled Mewt 
 <details>
  <summary>Click to expand</summary>
+ 
+  ### MicroBit 
+ <details>
+ <summary>Click to expand</summary>
+ 
+ * Program your Microbit using [this project](https://makecode.microbit.org/_CXW3Jt4d4LgP)
+ * Skip to the section **Connect your computer to your Mewt**
+ </details>
  
  ### PC
   _ | Common Cathode LED | Common Anode LED 
