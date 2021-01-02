@@ -103,9 +103,9 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    ![setup_mewt.bat](/images/screenshots/windows/setup_mewt.bat.png)
    1. You will see a prompt to plug Mewt into a USB port
    ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
-   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
-   ![mewtfirsttime](/images/mewtfirsttime.gif)
-   1. The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn every microphone in your system from Unmuted to Muted, and vice versa.
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt should show an **X**
+   ![mewted](/images/mewt/microbitmewted.jpg)
+   
    
    
    
