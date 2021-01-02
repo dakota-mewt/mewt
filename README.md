@@ -1,5 +1,6 @@
 # Mewt
-_if you are here for the all-in-one, no soldering Microbit version, [click here](https://github.com/dakota-mewt/mewt/blob/main/README_Microbit.md)
+
+_if you are here for the all-in-one, no soldering Microbit version, [click here](https://github.com/dakota-mewt/mewt/blob/main/README_Microbit.md)_
 
 Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single press for Windows, Mac and Linux**.  
 
