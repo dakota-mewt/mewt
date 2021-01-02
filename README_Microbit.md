@@ -41,7 +41,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 
 ## Test your Microbit
 1. Plug in your Microbit into a USB port
-1. Go to this [MakeCode page](https://makecode.microbit.org/03161-32693-51858-37236)
+1. Go to this [MakeCode page](https://makecode.microbit.org/_7FfVp4LV8V75)
 1. Click ***Edit*** in the upper right hand corner
 1. Click on the ***3 dots*** next to ***Download*** in the lower left hand corner, then ***"Pair Device***.  
 ![pairdevice](/images/screenshots/microbit/pairdevice.png)
@@ -212,43 +212,35 @@ _Note: these are not referral links, I do not benefit from you clicking on these
 <details>
  <summary>Click to expand</summary>
  
-* **Arduino**
+* **Microbit**
    <details>
     <summary>Click to expand</summary>
-   Mewt's Arduino code wires the below inputs, outputs and placeholders together:
+   Mewt's Microbit code wires the below inputs, outputs and placeholders together:
 
    **Input from user**
-     * Button: User issues command to Mewt to mute/unmute microphone by pressing the button
+     * Button: User issues command to Mewt to mute/unmute microphone by pressing the A/B buttons
 
    **Output to computer**
-     * Serial: Arduino opens up a communications channel to pass along the user input via commands to the computer.  1=mute, 0=unmute
+     * Serial: Microbit opens up a communications channel to pass along the user input via commands to the computer.  1=mute, 0=unmute
 
    **Input from computer**
-     * Serial: After the computer issues the command to mute/unmute the system microphone, it passes a value to Arduino to represent the current state of the microphone.  0=muted, 1=umuted.  It is also possible to receive values >1 if the computer supports streaming microphone volume data (for hot-mic support).  
+     * Serial: After the computer issues the command to mute/unmute the system microphone, it passes a value to Microbit to represent the current state of the microphone.  0=muted, 1=umuted.  It is also possible to receive values >1 if the computer supports streaming microphone volume data (for hot-mic support).  
 
    **Output to user**
-     * LED: Arduino takes the input from computer and maps them into different colors to be displayed to the user via the combination of RGB LED lights.  
+     * LED: Microbit takes the input from computer and maps them to be displayed to the user via the combination of LED lights.  
 
-      Value | Meaning | RGB | Color
-     :------------: | :-------------: | :-------------: |  :-------------: 
-     0 | Muted | R | Red
-     1 | Unmuted | B | Blue
-     2 | Button pressed | G | Green
-     mod 3 = 0 (3, 6, 9, etc.) | Hot-mic | RB | Purple
-     mod 3 = 1 (4, 7, 10, etc.) | Hot-mic | RG | Yellow
-     mod 3 = 2 (5, 8, 11, etc.) | Hot-mic | RGB | White
-     101 | There's a change to the system audio devices | G G G | Flashes green 3x
-
-   **Placeholders**
-     * toggleState: for momentary buttons, this help to keep track of whether the last button press resulted in a mute or an unmute, since you cannot read this off the button itself
-     * lastLedDisplayUpdate: keeps track of when the last udpate came in from the computer, helps it figure out when Mewt is no longer running on the computer
-     * lastVolume: keeps track of the previous volume.  This is currently deprecated.  It was previously used to detect volume changes to allow a single LED light to be flickered for Hot-mic if there was no RGB available
-     * ledDisplay: holds the value received from the computer and is used to determine which color LED to light
-
-   **Pseudocode**
-     * Read current state of button
-     * Read value from computer
-     * Figure out what RGB to turn on depending on value from computer
+   Status | Represents
+  :------------: | :-------------: 
+  **X** | Muted ![mewted](/images/mewt/microbitmewted.jpg) 
+  **O**  | Unmuted, but not transmitting ![unmewted](/images/mewt/microbitunmewted.jpg) 
+  **Hot mic**  | Volume indicator ![Hot Mic](/images/mewt/microbithotmic.gif
+  
+  **Pseudocode**
+     * Sets Serial communications speed to 9600 baud
+     * Inititalizes the mutecommand to 1 (for mute) and sends it to the computer
+     * Initializes screen to display an **X**
+     * If button A is pressed, sets mewtcommand to 1 (for mute) and then resets the Microbit (there is currently no way to turn off the microphone LED programmatically, resetting is the only way)
+     * 
      * Timestamps last value from computer
      * If it's been longer than 1 second since last value from computer, shut down all LEDs to avoid user confusion
      * If button was pressed, turn on Green LED to provide feedback to user
