@@ -39,6 +39,20 @@ Mewt is made up of 2 parts:
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for any merchant.  These are purely to help people get started_
 * $15[![microbit](/images/mewt/microbitmewted.jpg)](https://www.adafruit.com/product/3530)
 
+## Test your Microbit
+1. Plug in your Microbit into a USB port
+1. Go to this [MakeCode page](https://makecode.microbit.org/03161-32693-51858-37236)
+1. Click ***Edit*** in the upper right hand corner
+1. Click on the ***3 dots*** next to ***Download*** in the lower left hand corner, then ***"Pair Device***.  
+![pairdevice](/images/screenshots/microbit/pairdevice.png)
+1. In the new popup window, click ***Pair Device*** again
+![pairdeviceagain](/images/screenshots/microbit/pairdeviceagain.png)
+1. In the next popup window, select your Microbit device, then click ***Connect***
+![bbcmicrobitcmsis-dap](/images/screenshots/microbit/bbcmicrobitcmsis-dap.png)
+1. If all went well, then the icon next to ***Download*** should now be a ***USB logo*** _you may need to refresh the webpage for the logo to appear_
+![usbdownload](/images/screenshots/microbit/usbdownload.png)
+1. Click ***Download*** to push the code to your Microbit
+
 ## Connect your computer to your Mewt Microbit
 <details>
  <summary>Click to expand</summary>
@@ -58,22 +72,19 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    ![installingmewt](/images/screenshots/windows/installingmewt.png)
    1. You will see a prompt to plug Mewt into a USB port
    ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
-   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt may flash a white light briefly.  After a short delay, Mewt will light up with a steady Blue or Red light depending on whether your microphone is currently Unmuted or currently Muted.  _Based on your system/Arduino setup, it may take 15-20 seconds for the steady light to come on._
-   ![mewtfirsttime](/images/mewtfirsttime.gif)
-   1. The very first time you use Mewt, you will need to press the button twice in order to activate it (sorry, it's a bug, still a work-in-progress). After it has been activated, every single button press will turn every microphone in your system from Unmuted to Muted, and vice versa.  Below are what the colors represent:
+   1. When you plug in your Mewt, the prompt will disappear.  Your Mewt should show an **X**
+   ![mewted](/images/mewt/microbitmewted.jpg)
+   
 
-   Color | Represents
+   Status | Represents
   :------------: | :-------------: 
-  **0** | Muted ![red](/images/mewt/red.jpg) 
-  **1**  | Unmuted, but not transmitting ![blue](/images/mewt/blue.jpg) 
-  **2**  | Button pressed ![green](/images/mewt/green.jpg) 
-  **3**  | Hot-mic display ![purple](/images/mewt/purple.jpg) 
-  **4**  | Hot-mic display  ![yellow](/images/mewt/yellow.jpg) 
-  **5**  | Hot-mic display  ![white](/images/mewt/white.jpg) 
-  **101**  | Microphone devices have changed ![greenblink3x](/images/mewt/greenblink3x.gif)
+  **X** | Muted ![mewted](/images/mewt/microbitmewted.jpg) 
+  **O**  | Unmuted, but not transmitting ![unmewted](/images/mewt/microbitunmewted.jpg) 
+  **Hot mic**  | Volume indicator ![Hot Mic](/images/mewt/microbithotmic.gif
+
    * To test out Mewt, go to [online-voice-recorder.com](https://online-voice-recorder.com/), and click on the red button to record.  You should see it react to any sounds your microphone picks up.  
    ![onlinevoicerecorder](/images/onlinevoicerecorder.gif)  
-   ![mewtdemo](/images/mewtdemo.gif)
+   ![mewtdemo](/images/mewtdemomicrobit.gif)
    
    <details>
      <summary>
