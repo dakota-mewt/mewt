@@ -11,7 +11,7 @@ When Mewt detects that your microphone is transmitting audio, it will display a 
 
 Muted | Unmuted | Hot Mic
 :------------: | :-------------: | :-------------:
-![mewt](/images/mewt/microbitmewted.jpg) | ![unmewt](/images/mewt/microbitunmewted.jpg) | ![Hot Mic](/images/mewt/microbithotmic.gif)
+![mewt](/images/mewt/microbitmewted.jpg) | ![unmewt](/images/mewt/microbitunmewted.jpg) | ![Hot Mic](/images/mewt/microbitunmewted.jpg)
 
 # How Mewt works
 <details>
