@@ -109,7 +109,12 @@ You may be interested in building a simplified version of Mewt because you don't
 
 It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs, resistors).  Plus you still have spare parts to make other projects when you're done!
 
- </details>
+
+**Or a Microbit**:
+* $15[![microbit](/images/prototypes/microbit.png)](https://www.adafruit.com/product/3530)
+* You won't have to wire **ANYTHING** up, the buttons and LED displays are built-in.
+* Skip directly to the section **How to build Mewt -> Test your assembled Mewt**
+</details>
  
 
 </details>
@@ -171,6 +176,8 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
  <summary>Click to expand</summary>
 
 1. Go to [The Arduino Download Page](https://www.arduino.cc/en/software) to download the latest IDE for your OS
+1. Click on **Windows Installer** to download the latest version
+![arduinodownload](/images/screenshots/arduino/arduinodownload.png)
 1. Install and launch the IDE
 1. Select **_File->New_** and delete everything in the new window that opens up
 1. Select **_Tools->Board_** and choose your Arduino model.  _for Pro Micros, choose Arduino Leonardo_ 
@@ -440,7 +447,7 @@ If we release the button, then **mewtState** would be **HIGH**.  We then output 
    <details>
    <summary>Click to expand</summary>
    
-   * A Common (sometimes labeled **C** or **+**) - you will connect this to **5V** on your Arduino
+   * A Common (sometimes labeled **C** or **+**) - you will connect this to **5V/VCC** on your Arduino
    * A Terminal for every color LED in your light - You will start by identifying the terminal for the red LED and connecting it to the **D4** pins on your Arduino
    ![ledtestwiring-commonannode](/images/ledtestwiring-commonanode.png)
    
@@ -577,7 +584,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 * LED red -> D4
 * LED blue -> D7
 * LED green -> D9
-* LED common (anode) -> 5V
+* LED common (anode) -> 5V/VCC 
 * LED common (cathode) -> GND
 
   _ | Common Cathode LED | Common Anode LED 
@@ -590,6 +597,14 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 ## Test your assembled Mewt 
 <details>
  <summary>Click to expand</summary>
+ 
+  ### MicroBit 
+ <details>
+ <summary>Click to expand</summary>
+ 
+ * Program your Microbit using [this project](https://makecode.microbit.org/_CXW3Jt4d4LgP)
+ * Skip to the section **Connect your computer to your Mewt**
+ </details>
  
  ### PC
   _ | Common Cathode LED | Common Anode LED 
@@ -612,7 +627,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 
 * A **Common Cathode** LED shares a connection to Arduino's GND (-).  Arduino sets the state based on changing the voltage applied to the pin.  When you want to turn on an LED light, the code instructs Arduino to send a value of **HIGH**
 
-* A **Common Anode** LED shares a connection to Arduino's 5V (+).  When you want to turn on an LED light, the code instructs Arduino to send a value of **LOW**
+* A **Common Anode** LED shares a connection to Arduino's 5V/VCC (+).  When you want to turn on an LED light, the code instructs Arduino to send a value of **LOW**
 
 * A **Latching Button** stays locked to an on state or an off state depending on if you've pressed or released the button.  Arduino can simply read the current state to figure out if you intend Mewt to be enabled or not.
 
@@ -814,8 +829,8 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   ![smallbutton](/images/prototypes/smallbutton.png) | ![mediumbutton](/images/prototypes/mediumbutton.png) | ![mediumbutton2](/images/prototypes/mediumbutton2.png)
   Huge Button | Switch | Stick
   ![hugebutton](/images/prototypes/hugebutton.png) | ![switch](/images/prototypes/switch.png) | ![stick](/images/prototypes/stick.png)
-  Snap Circuits | - | -
-  ![snapcircuits](/images/prototypes/snapcircuits.png) | - | -
+  Snap Circuits | Microbit | -
+  ![snapcircuits](/images/prototypes/snapcircuits.png) | ![microbit](/images/prototypes/microbit.png) | -
 
 
 </details>   
@@ -843,7 +858,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
    **Output to user**
      * LED: Arduino takes the input from computer and maps them into different colors to be displayed to the user via the combination of RGB LED lights.  
 
-      Value | Meaning | RGB | Color
+     Value | Meaning | RGB | Color
      :------------: | :-------------: | :-------------: |  :-------------: 
      0 | Muted | R | Red
      1 | Unmuted | B | Blue
