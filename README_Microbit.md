@@ -233,21 +233,17 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   :------------: | :-------------: 
   **X** | Muted ![mewted](/images/mewt/microbitmewted.jpg) 
   **O**  | Unmuted, but not transmitting ![unmewted](/images/mewt/microbitunmewted.jpg) 
-  **Hot mic**  | Volume indicator ![Hot Mic](/images/mewt/microbithotmic.gif
+  **Hot mic**  | Volume indicator, every dot represents increments of 5 ![Hot Mic](/images/mewt/microbithotmic.gif)
   
   **Pseudocode**
      * Sets Serial communications speed to 9600 baud
-     * Inititalizes the mutecommand to 1 (for mute) and sends it to the computer
+     * Inititalizes the mutecommand to 1 (for mute) and sends it via to the computer via Serial
      * Initializes screen to display an **X**
      * If button A is pressed, sets mewtcommand to 1 (for mute) and then resets the Microbit (there is currently no way to turn off the microphone LED programmatically, resetting is the only way)
-     * 
-     * Timestamps last value from computer
-     * If it's been longer than 1 second since last value from computer, shut down all LEDs to avoid user confusion
-     * If button was pressed, turn on Green LED to provide feedback to user
-     * Read current state of button again
-     * If button was previously pressed, and is now released, then user has toggled mute/unmute.  Save mute state to memory.  Send command via serial to computer.
-
-
+     * If button B is pressed, sets mewtcommand to 0 (for unmute), sends it via to the computer via Serial, clears the screen, draws an **O**, and runs a **DetectSound** function to turn on the Microphone LED.
+     * If A+B is pressed or if the Logo is touched, it will toggle the mewtcommand (will mute if currently unmuted, and vice versa)
+     * If data is received from the computer via Serial, will draw the corresponding information on the LED
+  
 
    </details>
 
