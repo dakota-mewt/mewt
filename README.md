@@ -113,7 +113,7 @@ It will come with everything you need (Arduino, breadboard, wires, buttons, LEDs
 **Or a Microbit**:
 * $15[![microbit](/images/prototypes/microbit.png)](https://www.adafruit.com/product/3530)
 * You won't have to wire **ANYTHING** up, the buttons and LED displays are built-in.
-* Skip directly to the section **How to build Mewt -> Test your assembled Mewt**
+* Skip over to the [Microbit readme](https://github.com/dakota-mewt/mewt/blob/main/README_Microbit.md)
 </details>
  
 
