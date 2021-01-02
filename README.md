@@ -1,4 +1,6 @@
 # Mewt
+_if you are here for the all-in-one, no soldering Microbit version, [click here](https://github.com/dakota-mewt/mewt/blob/main/README_Microbit.md)
+
 Mewt allows you to create a **hardware button to Mute and Unmute all system microphones with a single press for Windows, Mac and Linux**.  
 
 Mewt works at the operating system (OS) level, so this **will mute/unmute all conferencing software** (Zoom, Google Meet, Teams, WebEx, Blue Jeans, GoToMeeting, Skype, Slack, Facebook, Discord, etc.)
