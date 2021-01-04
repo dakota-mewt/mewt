@@ -1,0 +1,1 @@
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -nologo -windowstyle hidden  -executionpolicy bypass -file .\mewt.ps1
