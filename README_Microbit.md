@@ -36,7 +36,7 @@ Mewt is made up of 2 parts:
 
 ## Get a Microbit (both V1 and V2 should work)
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for any merchant.  These are purely to help people get started_
-* $18 USD[![microbit](/images/mewt/microbitmewted.jpg)](https://chicagodist.com/products/micro-bit-v2)
+* $15 USD[![microbit](/images/mewt/microbitmewted.jpg)](https://www.seeedstudio.com/Micro-Bit-V2-p-4715.html)
 
 ## Connect your computer to your Mewt Microbit
 <details>
