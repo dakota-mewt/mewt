@@ -34,24 +34,9 @@ Mewt is made up of 2 parts:
 <details>
  <summary>Click to expand</summary>
 
-
 ## Get a Microbit (both V1 and V2 should work)
 _Note: these are not referral links, I do not benefit from you clicking on these links.  I am not making an endorsement for any merchant.  These are purely to help people get started_
-* $15[![microbit](/images/mewt/microbitmewted.jpg)](https://www.adafruit.com/product/3530)
-
-## Test your Microbit
-1. Plug in your Microbit into a USB port
-1. Go to this [MakeCode page](https://makecode.microbit.org/_7FfVp4LV8V75)
-1. Click ***Edit*** in the upper right hand corner
-1. Click on the ***3 dots*** next to ***Download*** in the lower left hand corner, then ***"Pair Device***.  
-![pairdevice](/images/screenshots/microbit/pairdevice.png)
-1. In the new popup window, click ***Pair Device*** again
-![pairdeviceagain](/images/screenshots/microbit/pairdeviceagain.png)
-1. In the next popup window, select your Microbit device, then click ***Connect***
-![bbcmicrobitcmsis-dap](/images/screenshots/microbit/bbcmicrobitcmsis-dap.png)
-1. If all went well, then the icon next to ***Download*** should now be a ***USB logo*** _you may need to refresh the webpage for the logo to appear_
-![usbdownload](/images/screenshots/microbit/usbdownload.png)
-1. Click ***Download*** to push the code to your Microbit
+* $18 USD[![microbit](/images/mewt/microbitmewted.jpg)](https://chicagodist.com/products/micro-bit-v2)
 
 ## Connect your computer to your Mewt Microbit
 <details>
@@ -61,11 +46,11 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
    
-   1. Download [mewt.exe](/code/windows/mewt.exe)   
+   1. Download [mewt.exe](/code/microbit/mewt_microbit.exe)   
    _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
    ![keepanyway](/images/screenshots/windows/keepanyway.png)
    1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
-   1. Find where you downloaded **mewt.exe** and run the file.
+   1. Find where you downloaded **mewt_microbit.exe** and run the file.
    1. Windows Defender / User Access Control may ask several times if you want to continue, follow screenshots to continue.
    ![windowsdefender](/images/screenshots/windows/windowsdefender.png)![runanyway](/images/screenshots/windows/runanyway.png)![unknownpublisher](/images/screenshots/windows/unknownpublisher.png)
    1. You will then see Mewt install itself
@@ -92,9 +77,9 @@ _Note: these are not referral links, I do not benefit from you clicking on these
      _Curious as to what the installation program did? Did the installation not work?  Click here to expand_
      </summary>
      
-   1. **mewt.exe** is a self-extracting version of **mewt.zip**.  
-   1. Download **[mewt.zip](/code/windows/mewt.zip)** to your computer
-   1. Navigate to where you saved **mewt.zip**, right click on it and select _**Extract All**_
+   1. **mewt_microbit.exe** is a self-extracting version of **mewt_microbit.zip**.  
+   1. Download **[mewt_microbit.zip](/code/microbit/mewt_microbit.zip)** to your computer
+   1. Navigate to where you saved **mewt_microbit.zip**, right click on it and select _**Extract All**_
    ![extractall](/images/screenshots/windows/extractall.png)
    1. In the next window, type in _**c:\mewt**_ then _**Extract**_
    ![extracttocmewt](/images/screenshots/windows/extracttocmewt.png)
@@ -116,6 +101,22 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
  
+    ## Setup your Microbit
+   1. Plug in your Microbit into a USB port
+   1. Go to this [MakeCode page](https://makecode.microbit.org/_7FfVp4LV8V75)
+   1. Click ***Edit*** in the upper right hand corner
+   1. Click on the ***3 dots*** next to ***Download*** in the lower left hand corner, then ***"Pair Device***.  
+   ![pairdevice](/images/screenshots/microbit/pairdevice.png)
+   1. In the new popup window, click ***Pair Device*** again
+   ![pairdeviceagain](/images/screenshots/microbit/pairdeviceagain.png)
+   1. In the next popup window, select your Microbit device, then click ***Connect***
+   ![bbcmicrobitcmsis-dap](/images/screenshots/microbit/bbcmicrobitcmsis-dap.png)
+   1. If all went well, then the icon next to ***Download*** should now be a ***USB logo*** _you may need to refresh the webpage for the logo to appear_
+   ![usbdownload](/images/screenshots/microbit/usbdownload.png)
+   1. Click ***Download*** to push the code to your Microbit
+ 
+ 
+   ## Setup your Mac
    1. Download [mewt.zip](/code/mac/mewt.zip)   
    _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
    ![keepanyway](/images/screenshots/windows/keepanyway.png)
@@ -134,6 +135,22 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
    
+   ## Setup your Microbit
+   1. Plug in your Microbit into a USB port
+   1. Go to this [MakeCode page](https://makecode.microbit.org/_7FfVp4LV8V75)
+   1. Click ***Edit*** in the upper right hand corner
+   1. Click on the ***3 dots*** next to ***Download*** in the lower left hand corner, then ***"Pair Device***.  
+   ![pairdevice](/images/screenshots/microbit/pairdevice.png)
+   1. In the new popup window, click ***Pair Device*** again
+   ![pairdeviceagain](/images/screenshots/microbit/pairdeviceagain.png)
+   1. In the next popup window, select your Microbit device, then click ***Connect***
+   ![bbcmicrobitcmsis-dap](/images/screenshots/microbit/bbcmicrobitcmsis-dap.png)
+   1. If all went well, then the icon next to ***Download*** should now be a ***USB logo*** _you may need to refresh the webpage for the logo to appear_
+   ![usbdownload](/images/screenshots/microbit/usbdownload.png)
+   1. Click ***Download*** to push the code to your Microbit
+   
+   
+   ## Setup your Linux
    1. Download [mewt.zip](/code/linux/mewt.zip)   
    1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
    1. Navigate to where you extracted **mewt.zip** from ***Terminal***
@@ -260,7 +277,6 @@ _Note: these are not referral links, I do not benefit from you clicking on these
      * If it's the first time Mewt/AudioDeviceCmdlets has run on this computer, it will install/copy the files to the correct directories for future use
      * Opens a separate process to output the volume stream of the current microphone to a file **out.txt**
      * Creates a Serial bus communicatioons using the COM port from above
-     * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up
      * Clears the console and outputs ***Mewt Ready*** *for verbose mode*
      * Declares some temporary variables to keep state for last button state and ***unmewtable device*** *I encountered USB microphone that unmuted itself right after a mute command was sent that needed specialized treatment*
      * Takes a snapshot of all system audio devices, filtered down to just the microphones/recording devices
@@ -295,7 +311,6 @@ _Note: these are not referral links, I do not benefit from you clicking on these
      * Reads the COM port to look for Mewt on from **port_arduino**.  *should have been detected and written as part of the setup*
      * Creates a Serial bus communicatioons using the COM port from above
      * Declares some temporary variables to keep state for last button state  
-     * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up  
      * Clears the console
 
    **Loop Pseudocode**
@@ -317,7 +332,6 @@ _Note: these are not referral links, I do not benefit from you clicking on these
      * Reads the COM port to look for Mewt on from **port_arduino**.  *should have been detected and written as part of the setup*
      * Creates a Serial bus communicatioons using the COM port from above
      * Declares some temporary variables to keep state for last button state  
-     * Sends **101** to Mewt to display flashing green light to indicate Mewt is starting up  
      * Clears the console
 
    **Loop Pseudocode**
