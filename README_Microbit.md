@@ -26,7 +26,7 @@ Mewt is made up of 2 parts:
    1. Recognize button presses to toggle microphone mute/unmute
    1. Read microphone mute/unmute state and send information to the Microbit to display status
    1. Read microphone volume levels and send information to the Microbit to display hot-mic
-![mewtdesign](/images/mewtdesign.png)
+![mewtdesign](/images/mewtmicrobitdesign.png)
 
 </details>
 
