@@ -46,7 +46,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
   <details>
    <summary>Click to expand</summary>
    
-   1. Download [mewt.exe](/code/microbit/mewt_microbit.exe)   
+   1. Download [mewt_microbit.exe](/code/microbit/mewt_microbit.exe)   
    _your browser may give you a warning when you try to download.  Select **Keep** to continue downloading._
    ![keepanyway](/images/screenshots/windows/keepanyway.png)
    1. **IMPORTANT** please **UNPLUG** Mewt from your computer's USB before continuing.
