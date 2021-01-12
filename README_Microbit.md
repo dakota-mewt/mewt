@@ -58,14 +58,14 @@ _Note: these are not referral links, I do not benefit from you clicking on these
    1. You will see a prompt to plug Mewt into a USB port
    ![pluginmewt](/images/screenshots/windows/pluginmewt.png)
    1. When you plug in your Mewt, the prompt will disappear.  Your Mewt should show an **X**
-   ![mewted](/images/mewt/microbitmewted.jpg)
+ 
    
 
    Status | Represents
   :------------: | :-------------: 
   **X** | Muted ![mewted](/images/mewt/microbitmewted.jpg) 
   **O**  | Unmuted, but not transmitting ![unmewted](/images/mewt/microbitunmewted.jpg) 
-  **Hot mic**  | Volume indicator ![Hot Mic](/images/mewt/microbithotmic.gif
+  **Hot mic**  | Volume indicator ![Hot Mic](/images/mewt/microbithotmic.gif)
 
    * To test out Mewt, go to [online-voice-recorder.com](https://online-voice-recorder.com/), and click on the red button to record.  You should see it react to any sounds your microphone picks up.  
    ![onlinevoicerecorder](/images/onlinevoicerecorder.gif)  
