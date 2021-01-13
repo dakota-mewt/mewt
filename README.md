@@ -1000,6 +1000,13 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
 # Questions/Comments/Help
 Join me on the [Mewt Discord](https://discord.gg/FMm7zVdPhs)
 
+* FAQ (Frequently Asked Questions)
+   <details>
+    <summary>Click to expand</summary>
+ 
+   * Can you make it work without an RGB?
+   _Yes.  Without an RGB, there are fewer ways to provide feedback about the microphone state, but we can still make it work.  Examples: 2 colors (1 for mute, 1 for unmute, blink unmute for hot mic), 1 color (on for mute, off for unmute, no hot mic), no LED (no feedback)_
+   </details>
 # Acknowledgments
 <details>
  <summary>Click to expand</summary>
