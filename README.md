@@ -998,7 +998,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  </details>
 
 # Questions/Comments/Help
-Join me on the [Mewt Discord](https://discord.gg/AkVu7wba)
+Join me on the [Mewt Discord](https://discord.gg/FMm7zVdPhs)
 
 # Acknowledgments
 <details>
