@@ -368,7 +368,7 @@ _Note: these are not referral links, I do not benefit from you clicking on these
  </details>
 
 # Questions/Comments/Help
-Join me on the [Mewt Discord](https://discord.gg/aGfKgpkcu9)
+Join me on the [Mewt Discord](https://discord.gg/FMm7zVdPhs)
 
 # Acknowledgments
 <details>
