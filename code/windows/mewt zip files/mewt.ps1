@@ -116,8 +116,12 @@ $stopwatch
 
 if ($param -eq "Zoom") {
 $wshell = New-Object -ComObject wscript.shell;
-$wshell.AppActivate('Zoom')
-$wshell.SendKeys('%a')
+if ($wshell.AppActivate('Zoom Meeting')) {
+	$wshell.SendKeys('%a')
+	}
+if ($wshell.AppActivate('Meeting Controls')) {
+	$wshell.SendKeys('%a')
+	}
 }
 
 if ($param -eq "Meet") {
