@@ -14,7 +14,7 @@ if (!(Test-Path "$($profile | split-path)\Modules\AudioDeviceCmdlets")) {
 	Import-Module .\AudioDeviceCmdlets
 }
 
-# starts writing volume stream to temporary file
+# starts writing volume stream to temporary file.
  $process = start-Process -FilePath powershell.exe -nonewwindow 'import-module .\audiodevicecmdlets; Write-AudioDevice -RecordingStream | out-file .\out.txt' -passthru
 #$port.close()
 $port = new-Object System.IO.Ports.SerialPort $mewt_port,9600,None,8,one
@@ -128,6 +128,12 @@ if ($param -eq "Meet") {
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('Google Chrome')
 $wshell.SendKeys('^d')
+}
+
+if ($param -eq "Discord") {
+$wshell = New-Object -ComObject wscript.shell;
+$wshell.AppActivate('Discord')
+$wshell.SendKeys('^+d')
 }
 
 #$stopwatch
