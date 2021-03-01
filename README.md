@@ -825,9 +825,9 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
  
  Here are some different ways Mewt can be implemented.
 
-  Dakota-Mewt 3D printed top | Dakota-Mewt 3D printed bottom | -
+  @Dakota-Mewt's 3D printed top | Dakota-Mewt's 3D printed bottom | @Dakota-Mewt's 3d printed enclosure
   :------------: | :-------------: | :-------------:
-  ![3dprintedtop](/images/prototypes/3dprintedtop.png) | ![3dprintedbottom](/images/prototypes/3dprintedbottom.png) |  -
+  [![@dakota-mewt'stop](/3d-enclosures/@dakota-mewt/top.png)](/3d-enclosures/%40dakota-mewt/Dakota-Mewt.stl) | [![@dakota-mewt'sbottom](/3d-enclosures/@dakota-mewtbottom.png)](/3d-enclosures/%40dakota-mewt/Dakota-Mewt.stl) |   [![@dakota-mewt'spicture](/3d-enclosures/@dakota-mewt/picture.png)]
   @kulfsson's 3D printed top | @kulfsson's 3D printed bottom | @kulfsson's 3D printed enclosure
   [![@kulfsson'stop](/3d-enclosures/@kulfsson/top.png)](https://www.thingiverse.com/thing:4778895/files) | [![@kulfsson'sbottom](/3d-enclosures/@kulfsson/bottom.png)](https://www.thingiverse.com/thing:4778895/files) |  [![@kulfsson'spicture](/3d-enclosures/@kulfsson/picture.png)](https://www.thingiverse.com/thing:4778895/files)
   Small Button | Medium Button | Medium Button
