@@ -829,8 +829,7 @@ Connect your button/LED to your Arduino using the wiring applicable to your comp
   :------------: | :-------------: | :-------------:
   ![3dprintedtop](/images/prototypes/3dprintedtop.png) | ![3dprintedbottom](/images/prototypes/3dprintedbottom.png) |  -
   @kulfsson's 3D printed top | @kulfsson's 3D printed bottom | @kulfsson's 3D printed enclosure
-  :------------: | :-------------: | :-------------:
-  ![@kulfsson'stop](/3d-enclosures/@kulfsson/top.png) | ![@kulfsson'sbottom](/3d-enclosures/@kulfsson/bottom.png) |  ![@kulfsson'spicture](/3d-enclosures/@kulfsson/picture.png)
+  [![@kulfsson'stop](/3d-enclosures/@kulfsson/top.png)](https://www.thingiverse.com/thing:4778895/files) | [![@kulfsson'sbottom](/3d-enclosures/@kulfsson/bottom.png)](https://www.thingiverse.com/thing:4778895/files) |  [![@kulfsson'spicture](/3d-enclosures/@kulfsson/picture.png)](https://www.thingiverse.com/thing:4778895/files)
   Small Button | Medium Button | Medium Button
   ![smallbutton](/images/prototypes/smallbutton.png) | ![mediumbutton](/images/prototypes/mediumbutton.png) | ![mediumbutton2](/images/prototypes/mediumbutton2.png)
   Huge Button | Switch | Stick
