@@ -1007,9 +1007,11 @@ Join me on the [Mewt Discord](https://discord.gg/FMm7zVdPhs)
     <summary>Click to expand</summary>
  
    * Can you make it work without an RGB?
+
    _Yes.  Without an RGB, there are fewer ways to provide feedback about the microphone state, but we can still make it work.  Examples: 2 colors (1 for mute, 1 for unmute, blink unmute for hot mic), 1 color (on for mute, off for unmute, no hot mic), no LED (no feedback)_
    
    * The powershell window keeps opening and closing endlessly and I am seeing "faulty audio device" when running verbose mode. Windows 10 may be blocking the DLL
+
    _Go into C:\mewt and right clicked on the DLL and selected properties.  Check the box to unblock the DLL and hit apply.  Thank you @shatter71!_
    </details>
 # Acknowledgments
