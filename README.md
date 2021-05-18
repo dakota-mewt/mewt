@@ -1014,6 +1014,19 @@ Join me on the [Mewt Discord](https://discord.gg/FMm7zVdPhs)
 
    _Go into C:\mewt and right clicked on the DLL and selected properties.  Check the box to unblock the DLL and hit apply.  Thank you @shatter71!_
    </details>
+
+# Community Showcase
+   <details>
+    <summary>Click to expand</summary>
+
+ [Kulfsson](https://www.thingiverse.com/thing:4778895) | ![1](https://media.discordapp.net/attachments/790788123968667653/811153916401549313/unknown.png) | ![2](https://media.discordapp.net/attachments/790788123968667653/811154015441125376/unknown.png) | ![3](https://media.discordapp.net/attachments/790788123968667653/811154167191568384/unknown.png) | ![4](https://media.discordapp.net/attachments/790788123968667653/811154273173110784/unknown.png)
+   :------------: | :-------------: | :-------------: | :-------------: | :-------------:
+mattlag | ![1](https://media.discordapp.net/attachments/790788123968667653/813570307838836776/unknown.png)
+   birlaP | ![1](https://media.discordapp.net/attachments/790788123968667653/827874162252447744/IMG20210403172315.jpg) | ![2](https://media.discordapp.net/attachments/790788123968667653/827874162852626442/IMG20210403172303.jpg) | ![3](https://media.discordapp.net/attachments/790788123968667653/827874163251347526/IMG20210403172257.jpg) | 
+Joe_Shmow | ![1](https://media.discordapp.net/attachments/790788123968667653/843379994221609010/mewt.jpg?width=729&height=1297)
+ 
+   </details>
+   
 # Acknowledgments
 <details>
  <summary>Click to expand</summary>
