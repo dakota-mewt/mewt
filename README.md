@@ -1024,8 +1024,10 @@ Join me on the [Mewt Discord](https://discord.gg/FMm7zVdPhs)
 mattlag | ![1](https://media.discordapp.net/attachments/790788123968667653/813570307838836776/unknown.png)
    birlaP | ![1](https://media.discordapp.net/attachments/790788123968667653/827874162252447744/IMG20210403172315.jpg) | ![2](https://media.discordapp.net/attachments/790788123968667653/827874162852626442/IMG20210403172303.jpg) | ![3](https://media.discordapp.net/attachments/790788123968667653/827874163251347526/IMG20210403172257.jpg) | 
 Joe_Shmow | ![1](https://media.discordapp.net/attachments/790788123968667653/843379994221609010/mewt.jpg?width=729&height=1297)
- 
-   </details>
+Thomas Neis | [![1](https://media.discordapp.net/attachments/844326788167237643/844406252872400906/unknown.png?width=735&height=1313)](https://www.tiktok.com/@razzo_studio/video/6959289075480186118?sender_device=pc&sender_web_id=6963827378129241605&is_from_webapp=v1&is_copy_url=0)
+
+
+</details>
    
 # Acknowledgments
 <details>
